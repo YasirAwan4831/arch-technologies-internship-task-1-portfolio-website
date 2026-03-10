@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muhammad Yasir — Full Stack Developer from Islamabad. Portfolio showcasing projects, skills, experience, blog and services.">
+    <meta name="keywords" content="Muhammad Yasir, Full Stack Developer, React, JavaScript, Portfolio, Islamabad, Pakistan">
+    <meta name="author" content="Muhammad Yasir">
+    <meta property="og:title" content="Muhammad Yasir — Full Stack Developer">
+    <meta property="og:description" content="Building modern web experiences with clean code and thoughtful design.">
+    <meta property="og:type" content="website">
+    <title>Muhammad Yasir — Full Stack Developer</title>
+
+       <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/icon.jpeg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===================== PAGE LOADER ===================== -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <span class="loader-logo">&lt;Yasir/&gt;</span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- ===================== CUSTOM CURSOR ===================== -->
+    <div class="cursor-dot"     id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- ===================== NAVIGATION ===================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Yasir<span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home"         class="nav-link active">Home</a></li>
+                <li><a href="#about"        class="nav-link">About</a></li>
+                <li><a href="#projects"     class="nav-link">Projects</a></li>
+                <li><a href="#skills"       class="nav-link">Skills</a></li>
+                <li><a href="#experience"   class="nav-link">Experience</a></li>
+                <li><a href="#education"    class="nav-link">Education</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#services"     class="nav-link">Services</a></li>
+                <li><a href="#blog"         class="nav-link">Blog</a></li>
+                <li><a href="#contact"      class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section id="home" class="section hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+
+                <!-- Hero Text -->
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Available for Work
+                    </div>
+                    <span class="hero-greeting">Hello, I'm</span>
+                    <h1 class="hero-name">Muhammad <span class="accent">Yasir</span></h1>
+                    <h2 class="hero-title">
+                        <span id="typed"></span>
+                        <span class="typed-cursor">|</span>
+                    </h2>
+                    <p class="hero-desc">
+                        A passionate Full Stack Developer from Islamabad, Pakistan — crafting modern,
+                        responsive and user-friendly web experiences with clean code and thoughtful design.
+                    </p>
+
+                    <!-- Hero Stats — filled by JS -->
+                    <div class="hero-stats" id="heroStats"></div>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Work <i class="fas fa-arrow-right"></i></a>
+                        <a href="#contact"  class="btn btn-outline">Hire Me</a>
+                        <a href="#"         class="btn btn-ghost" download>Download CV <i class="fas fa-download"></i></a>
+                    </div>
+
+                    <!-- Hero Social Links — filled by JS -->
+                    <div class="hero-social" id="heroSocial"></div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="hero-image">
+                    <div class="hero-img-wrapper">
+                        <div class="hero-img-ring"></div>
+                        <div class="hero-img-ring ring-2"></div>
+                        <div class="hero-img-frame">
+                            <img src="/assets/my-pic.jpeg" alt="Muhammad Yasir — Full Stack Developer" class="hero-photo">
+                        </div>
+                        <!-- Floating Tech Cards — filled by JS -->
+                        <div class="float-cards" id="floatCards"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">About <span class="accent">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <!-- Filled by JS -->
+            <div class="about-grid" id="aboutContent"></div>
+        </div>
+    </section>
+
+    <!-- ===================== PROJECTS SECTION ===================== -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">A showcase of 12 real projects demonstrating my skills and passion for quality.</p>
+            </div>
+            <!-- Project Filters — filled by JS -->
+            <div class="project-filters" id="projectFilters"></div>
+            <!-- Projects Grid — filled by JS -->
+            <div class="projects-grid" id="projectsGrid"></div>
+            <div class="projects-footer">
+                <button class="btn btn-outline" id="loadMoreBtn">
+                    Load More Projects <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS SECTION ===================== -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">Skills & <span class="accent">Tools</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Technologies and tools I use to build high-quality digital solutions.</p>
+            </div>
+            <!-- Filled by JS -->
+            <div id="skillsContent"></div>
+        </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE SECTION ===================== -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Work History</span>
+                <h2 class="section-title">My <span class="accent">Experience</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <!-- Filled by JS -->
+            <div class="experience-layout" id="expContent"></div>
+        </div>
+    </section>
+
+    <!-- ===================== EDUCATION SECTION ===================== -->
+    <section id="education" class="section education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Learning</span>
+                <h2 class="section-title">Education & <span class="accent">Certifications</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <!-- Filled by JS -->
+            <div class="education-grid" id="eduContent"></div>
+        </div>
+    </section>
+
+    <!-- ===================== ACHIEVEMENTS SECTION ===================== -->
+    <section id="achievements" class="section achievements">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Milestones</span>
+                <h2 class="section-title">Achievements & <span class="accent">Awards</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <!-- Filled by JS -->
+            <div class="achievements-grid" id="achievementsGrid"></div>
+        </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS SECTION ===================== -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Feedback</span>
+                <h2 class="section-title">Client <span class="accent">Testimonials</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <!-- Filled by JS — slider wrapper -->
+            <div class="testimonials-slider" id="testiWrap"></div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICES SECTION ===================== -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Offer</span>
+                <h2 class="section-title">My <span class="accent">Services</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Professional digital services with flexible plans for every budget.</p>
+            </div>
+            <!-- Filled by JS -->
+            <div id="servicesContent"></div>
+        </div>
+    </section>
+
+    <!-- ===================== BLOG SECTION ===================== -->
+    <section id="blog" class="section blog">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Articles</span>
+                <h2 class="section-title">Blog & <span class="accent">Insights</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Real articles written by me — web development, design and career insights.</p>
+            </div>
+            <!-- Filled by JS -->
+            <div class="blog-grid" id="blogGrid"></div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Let's Talk</span>
+                <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Have a project? Let's create something amazing together.</p>
+            </div>
+            <!-- Filled by JS -->
+            <div class="contact-grid" id="contactContent"></div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Filled by JS -->
+            <div class="footer-grid" id="footerGrid"></div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Muhammad Yasir. All rights reserved.</p>
+                <p>Designed & developed with <span class="heart">❤️</span> by M.Yasir</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== BACK TO TOP BUTTON ===================== -->
+    <button class="back-to-top" id="backTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ===================== BLOG POST MODAL ===================== -->
+    <div class="modal" id="blogModal" role="dialog" aria-modal="true" aria-label="Blog Post">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal" aria-label="Close modal">&times;</button>
+            <div class="modal-body" id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- ===================== JAVASCRIPT ===================== -->
+    <script src="script.js"></script>
+
+</body>
+</html>
