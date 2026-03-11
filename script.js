@@ -26,7 +26,7 @@ const DATA = {
         medium: 'https://medium.com/@YasirAwan4831',
         website: 'https://muhammadyaser-portfolio.netlify.app',
         cv: '#',
-        avatar: 'https://via.placeholder.com/400',
+        avatar: '/assets/my-pic.jpeg',
         bio: [
             'I am a passionate <strong>Full Stack Developer</strong> with 2+ years of hands-on experience building modern web applications. I specialize in creating interactive, responsive and performance-optimized digital experiences from frontend to backend.',
             'My journey began with a deep curiosity for how the web works, which evolved into a professional career crafting clean code and beautiful interfaces. I thrive on transforming complex problems into elegant, user-friendly solutions.',
@@ -42,8 +42,8 @@ const DATA = {
 
     heroStats: [
         { num: '25+', label: 'Projects' },
-        { num: '2+',  label: 'Years Exp.' },
-        { num: '3+',  label: 'Internships' }
+        { num: '2+', label: 'Years Exp.' },
+        { num: '3+', label: 'Internships' }
     ],
 
     typedPhrases: [
@@ -56,35 +56,35 @@ const DATA = {
     ],
 
     floatCards: [
-        { icon: 'fab fa-react',   label: 'React',      cls: 'fc1', color: '#61dafb' },
-        { icon: 'fab fa-node-js', label: 'Node.js',    cls: 'fc2', color: '#339933' },
-        { icon: 'fab fa-js',      label: 'JavaScript', cls: 'fc3', color: '#f7df1e' }
+        { icon: 'fab fa-react', label: 'React', cls: 'fc1', color: '#61dafb' },
+        { icon: 'fab fa-node-js', label: 'Node.js', cls: 'fc2', color: '#339933' },
+        { icon: 'fab fa-js', label: 'JavaScript', cls: 'fc3', color: '#f7df1e' }
     ],
 
     socials: [
-        { icon: 'fab fa-github',      url: 'https://github.com/YasirAwan4831',           label: 'GitHub'   },
+        { icon: 'fab fa-github', url: 'https://github.com/YasirAwan4831', label: 'GitHub' },
         { icon: 'fab fa-linkedin-in', url: 'https://www.linkedin.com/in/yasirawan4831/', label: 'LinkedIn' },
-        { icon: 'fas fa-envelope',    url: 'mailto:myasirtech4831@gmail.com',            label: 'Email'    },
-        { icon: 'fab fa-x-twitter',   url: 'https://x.com/YasirAwan4831',               label: 'Twitter'  }
+        { icon: 'fas fa-envelope', url: 'mailto:myasirtech4831@gmail.com', label: 'Email' },
+        { icon: 'fas fa-link', url: 'https://linktr.ee/yasirawan4831', label: 'Linktree' }
     ],
 
     allSocials: [
-        { icon: 'fab fa-linkedin-in', url: 'https://www.linkedin.com/in/yasirawan4831/',                   label: 'LinkedIn'  },
-        { icon: 'fab fa-github',      url: 'https://github.com/YasirAwan4831',                            label: 'GitHub'    },
-        { icon: 'fab fa-instagram',   url: 'https://www.instagram.com/yasirawan4831/',                    label: 'Instagram' },
-        { icon: 'fab fa-x-twitter',   url: 'https://x.com/YasirAwan4831',                                label: 'Twitter'   },
-        { icon: 'fab fa-facebook-f',  url: 'https://www.facebook.com/profile.php?id=61575935942197',      label: 'Facebook'  },
-        { icon: 'fab fa-whatsapp',    url: 'https://call.whatsapp.com/voice/Vy6FTmNnwmVqZPvP7XFIfk',     label: 'WhatsApp', cls: 'wa' },
-        { icon: 'fab fa-youtube',     url: 'https://www.youtube.com/@YasirTech-t1d',                      label: 'YouTube'   },
-        { icon: 'fab fa-medium-m',    url: 'https://medium.com/@YasirAwan4831',                           label: 'Medium'    }
+        { icon: 'fab fa-linkedin-in', url: 'https://www.linkedin.com/in/yasirawan4831/', label: 'LinkedIn' },
+        { icon: 'fab fa-github', url: 'https://github.com/YasirAwan4831', label: 'GitHub' },
+        { icon: 'fab fa-instagram', url: 'https://www.instagram.com/yasirawan4831/', label: 'Instagram' },
+        { icon: 'fas fa-link', url: 'https://linktr.ee/yasirawan4831', label: 'Linktree' },
+        { icon: 'fab fa-facebook-f', url: 'https://www.facebook.com/profile.php?id=61575935942197', label: 'Facebook' },
+        { icon: 'fab fa-whatsapp', url: 'https://call.whatsapp.com/voice/Vy6FTmNnwmVqZPvP7XFIfk', label: 'WhatsApp', cls: 'wa' },
+        { icon: 'fab fa-youtube', url: 'https://www.youtube.com/@YasirTech-t1d', label: 'YouTube' },
+        { icon: 'fab fa-medium-m', url: 'https://medium.com/@YasirAwan4831', label: 'Medium' }
     ],
 
     projectFilters: [
-        { key: 'all',       label: 'All Projects' },
-        { key: 'fullstack', label: 'Full Stack'   },
-        { key: 'frontend',  label: 'Frontend'     },
-        { key: 'python',    label: 'Python / AI'  },
-        { key: 'wordpress', label: 'WordPress'    }
+        { key: 'all', label: 'All Projects' },
+        { key: 'fullstack', label: 'Full Stack' },
+        { key: 'frontend', label: 'Frontend' },
+        { key: 'python', label: 'Python / AI' },
+        { key: 'wordpress', label: 'WordPress' }
     ],
 
     projects: [
@@ -251,45 +251,45 @@ const DATA = {
             icon: 'fas fa-laptop-code',
             title: 'Frontend',
             items: [
-                { icon: 'fab fa-html5',    name: 'HTML5',      color: '#e34f26' },
-                { icon: 'fab fa-css3-alt', name: 'CSS3',       color: '#1572b6' },
-                { icon: 'fab fa-js',       name: 'JavaScript', color: '#f7df1e' },
-                { icon: 'fab fa-react',    name: 'React',      color: '#61dafb' },
-                { icon: 'fab fa-vuejs',    name: 'Vue.js',     color: '#42b883' },
-                { icon: 'fas fa-code',     name: 'TypeScript', color: '#007acc' }
+                { icon: 'fab fa-html5', name: 'HTML5', color: '#e34f26' },
+                { icon: 'fab fa-css3-alt', name: 'CSS3', color: '#1572b6' },
+                { icon: 'fab fa-js', name: 'JavaScript', color: '#f7df1e' },
+                { icon: 'fab fa-react', name: 'React', color: '#61dafb' },
+                { icon: 'fab fa-vuejs', name: 'Vue.js', color: '#42b883' },
+                { icon: 'fas fa-code', name: 'TypeScript', color: '#007acc' }
             ]
         },
         {
             icon: 'fas fa-server',
             title: 'Backend',
             items: [
-                { icon: 'fab fa-node-js',  name: 'Node.js',   color: '#339933' },
-                { icon: 'fas fa-database', name: 'Express.js',color: '#00e5a0' },
-                { icon: 'fab fa-php',      name: 'PHP',        color: '#8892bf' },
-                { icon: 'fab fa-python',   name: 'Python',     color: '#3776ab' },
-                { icon: 'fas fa-plug',     name: 'REST APIs',  color: '#ff6b6b' },
-                { icon: 'fas fa-code',     name: 'JSON',       color: '#f7df1e' }
+                { icon: 'fab fa-node-js', name: 'Node.js', color: '#339933' },
+                { icon: 'fas fa-database', name: 'Express.js', color: '#00e5a0' },
+                { icon: 'fab fa-php', name: 'PHP', color: '#8892bf' },
+                { icon: 'fab fa-python', name: 'Python', color: '#3776ab' },
+                { icon: 'fas fa-plug', name: 'REST APIs', color: '#ff6b6b' },
+                { icon: 'fas fa-code', name: 'JSON', color: '#f7df1e' }
             ]
         },
         {
             icon: 'fas fa-database',
             title: 'Database',
             items: [
-                { icon: 'fas fa-database', name: 'MongoDB',  color: '#47a248' },
-                { icon: 'fas fa-database', name: 'MySQL',    color: '#00758f' },
-                { icon: 'fas fa-fire',     name: 'Firebase', color: '#f7941d' }
+                { icon: 'fas fa-database', name: 'MongoDB', color: '#47a248' },
+                { icon: 'fas fa-database', name: 'MySQL', color: '#00758f' },
+                { icon: 'fas fa-fire', name: 'Firebase', color: '#f7941d' }
             ]
         },
         {
             icon: 'fas fa-paint-brush',
             title: 'Design & Tools',
             items: [
-                { icon: 'fab fa-figma',     name: 'Figma',     color: '#f24e1e' },
-                { icon: 'fas fa-palette',   name: 'Canva',     color: '#00c4cc' },
-                { icon: 'fab fa-git-alt',   name: 'Git',       color: '#f05032' },
-                { icon: 'fab fa-github',    name: 'GitHub',    color: '#6e5494' },
+                { icon: 'fab fa-figma', name: 'Figma', color: '#f24e1e' },
+                { icon: 'fas fa-palette', name: 'Canva', color: '#00c4cc' },
+                { icon: 'fab fa-git-alt', name: 'Git', color: '#f05032' },
+                { icon: 'fab fa-github', name: 'GitHub', color: '#6e5494' },
                 { icon: 'fab fa-wordpress', name: 'WordPress', color: '#21759b' },
-                { icon: 'fas fa-robot',     name: 'OpenAI API',color: '#412991' }
+                { icon: 'fas fa-robot', name: 'OpenAI API', color: '#412991' }
             ]
         }
     ],
@@ -355,9 +355,9 @@ const DATA = {
     ],
 
     expStats: [
-        { num: '2+',   label: 'Years Exp.'   },
-        { num: '3+',   label: 'Internships'  },
-        { num: '12+',  label: 'Projects'     },
+        { num: '2+', label: 'Years Exp.' },
+        { num: '3+', label: 'Internships' },
+        { num: '12+', label: 'Projects' },
         { num: '100%', label: 'Satisfaction' }
     ],
 
@@ -389,12 +389,12 @@ const DATA = {
     ],
 
     certifications: [
-        { icon: 'fab fa-react',     name: 'React Development Bootcamp',   issuer: 'DevHub Corporation',   year: '2025', link: 'https://www.linkedin.com/in/yasirawan4831/' },
-        { icon: 'fab fa-js',        name: 'JavaScript Advanced Concepts', issuer: 'Udemy',                year: '2024', link: '#' },
-        { icon: 'fab fa-figma',     name: 'UI/UX Design Fundamentals',    issuer: 'Figma Community',      year: '2024', link: '#' },
-        { icon: 'fab fa-wordpress', name: 'WordPress & WooCommerce',      issuer: 'Online Platform',      year: '2024', link: '#' },
-        { icon: 'fas fa-briefcase', name: 'Career Development Program',   issuer: 'Pakistan Career Fire', year: '2025', link: 'https://www.linkedin.com/in/yasirawan4831/' },
-        { icon: 'fab fa-python',    name: 'Python & OpenCV Basics',       issuer: 'Self-Paced',           year: '2024', link: '#' }
+        { icon: 'fab fa-react', name: 'React Development Bootcamp', issuer: 'DevHub Corporation', year: '2025', link: 'https://www.linkedin.com/in/yasirawan4831/' },
+        { icon: 'fab fa-js', name: 'JavaScript Advanced Concepts', issuer: 'Udemy', year: '2024', link: '#' },
+        { icon: 'fab fa-figma', name: 'UI/UX Design Fundamentals', issuer: 'Figma Community', year: '2024', link: '#' },
+        { icon: 'fab fa-wordpress', name: 'WordPress & WooCommerce', issuer: 'Online Platform', year: '2024', link: '#' },
+        { icon: 'fas fa-briefcase', name: 'Career Development Program', issuer: 'Pakistan Career Fire', year: '2025', link: 'https://www.linkedin.com/in/yasirawan4831/' },
+        { icon: 'fab fa-python', name: 'Python & OpenCV Basics', issuer: 'Self-Paced', year: '2024', link: '#' }
     ],
 
     achievements: [
@@ -621,12 +621,12 @@ const DATA = {
                     popular: false,
                     desc: 'Perfect for small businesses and individuals needing a simple web presence.',
                     features: [
-                        { text: 'Up to 5 Pages',            included: true  },
-                        { text: 'Responsive Design',         included: true  },
-                        { text: 'Contact Form Integration',  included: true  },
-                        { text: 'Basic SEO Setup',           included: true  },
-                        { text: 'Backend / Database',        included: false },
-                        { text: 'API Integration',           included: false }
+                        { text: 'Up to 5 Pages', included: true },
+                        { text: 'Responsive Design', included: true },
+                        { text: 'Contact Form Integration', included: true },
+                        { text: 'Basic SEO Setup', included: true },
+                        { text: 'Backend / Database', included: false },
+                        { text: 'API Integration', included: false }
                     ]
                 },
                 {
@@ -636,12 +636,12 @@ const DATA = {
                     popular: true,
                     desc: 'Complete web application for growing businesses with full features.',
                     features: [
-                        { text: 'Up to 15 Pages',               included: true },
-                        { text: 'Responsive + Animated UI',      included: true },
-                        { text: 'Backend with Node.js/Express',  included: true },
-                        { text: 'Database Integration',          included: true },
-                        { text: 'API Integration',               included: true },
-                        { text: 'Performance Optimization',      included: true }
+                        { text: 'Up to 15 Pages', included: true },
+                        { text: 'Responsive + Animated UI', included: true },
+                        { text: 'Backend with Node.js/Express', included: true },
+                        { text: 'Database Integration', included: true },
+                        { text: 'API Integration', included: true },
+                        { text: 'Performance Optimization', included: true }
                     ]
                 },
                 {
@@ -651,10 +651,10 @@ const DATA = {
                     popular: false,
                     desc: 'Full-scale custom web applications for established businesses.',
                     features: [
-                        { text: 'Unlimited Pages',           included: true },
-                        { text: 'Full Stack Architecture',   included: true },
-                        { text: 'Authentication System',     included: true },
-                        { text: 'Admin Dashboard',           included: true },
+                        { text: 'Unlimited Pages', included: true },
+                        { text: 'Full Stack Architecture', included: true },
+                        { text: 'Authentication System', included: true },
+                        { text: 'Admin Dashboard', included: true },
                         { text: 'Advanced API Integrations', included: true },
                         { text: '3 Months Priority Support', included: true }
                     ]
@@ -672,12 +672,12 @@ const DATA = {
                     popular: false,
                     desc: 'Essential design assets for startups and small projects.',
                     features: [
-                        { text: 'Logo Design (2 Concepts)', included: true  },
-                        { text: '3 Social Media Posts',     included: true  },
-                        { text: 'Business Card Design',     included: true  },
-                        { text: '1 Revision Round',         included: true  },
-                        { text: 'Brand Guidelines',         included: false },
-                        { text: 'Source Files',             included: false }
+                        { text: 'Logo Design (2 Concepts)', included: true },
+                        { text: '3 Social Media Posts', included: true },
+                        { text: 'Business Card Design', included: true },
+                        { text: '1 Revision Round', included: true },
+                        { text: 'Brand Guidelines', included: false },
+                        { text: 'Source Files', included: false }
                     ]
                 },
                 {
@@ -687,12 +687,12 @@ const DATA = {
                     popular: true,
                     desc: 'Complete branding package for professional businesses.',
                     features: [
-                        { text: 'Logo Design (5 Concepts)',  included: true },
-                        { text: '10 Social Media Posts',     included: true },
-                        { text: 'Banner & Poster Design',    included: true },
-                        { text: 'Brand Color Palette',       included: true },
-                        { text: '3 Revision Rounds',         included: true },
-                        { text: 'Source Files (PSD/Figma)',  included: true }
+                        { text: 'Logo Design (5 Concepts)', included: true },
+                        { text: '10 Social Media Posts', included: true },
+                        { text: 'Banner & Poster Design', included: true },
+                        { text: 'Brand Color Palette', included: true },
+                        { text: '3 Revision Rounds', included: true },
+                        { text: 'Source Files (PSD/Figma)', included: true }
                     ]
                 },
                 {
@@ -702,12 +702,12 @@ const DATA = {
                     popular: false,
                     desc: 'Full brand identity and marketing design solution.',
                     features: [
-                        { text: 'Full Brand Identity Kit',       included: true },
-                        { text: 'Unlimited Social Media Posts',  included: true },
-                        { text: 'UI/UX Mockups',                 included: true },
-                        { text: 'Animated Posts',                included: true },
-                        { text: 'Unlimited Revisions',           included: true },
-                        { text: '48-Hour Priority Delivery',     included: true }
+                        { text: 'Full Brand Identity Kit', included: true },
+                        { text: 'Unlimited Social Media Posts', included: true },
+                        { text: 'UI/UX Mockups', included: true },
+                        { text: 'Animated Posts', included: true },
+                        { text: 'Unlimited Revisions', included: true },
+                        { text: '48-Hour Priority Delivery', included: true }
                     ]
                 }
             ]
@@ -723,12 +723,12 @@ const DATA = {
                     popular: false,
                     desc: 'Simple WordPress site setup for individuals and freelancers.',
                     features: [
-                        { text: 'Domain + Hosting Setup',  included: true  },
-                        { text: 'Free Theme Installation', included: true  },
-                        { text: 'Up to 5 Pages',           included: true  },
-                        { text: 'Contact Form Setup',      included: true  },
-                        { text: 'Elementor Design',        included: false },
-                        { text: 'WooCommerce Store',       included: false }
+                        { text: 'Domain + Hosting Setup', included: true },
+                        { text: 'Free Theme Installation', included: true },
+                        { text: 'Up to 5 Pages', included: true },
+                        { text: 'Contact Form Setup', included: true },
+                        { text: 'Elementor Design', included: false },
+                        { text: 'WooCommerce Store', included: false }
                     ]
                 },
                 {
@@ -738,12 +738,12 @@ const DATA = {
                     popular: true,
                     desc: 'Professional WordPress site for businesses and agencies.',
                     features: [
-                        { text: 'Premium Theme',        included: true },
+                        { text: 'Premium Theme', included: true },
                         { text: 'Elementor Pro Design', included: true },
-                        { text: 'Up to 12 Pages',       included: true },
-                        { text: 'WooCommerce Setup',    included: true },
-                        { text: 'Speed Optimization',   included: true },
-                        { text: 'Advanced SEO',         included: true }
+                        { text: 'Up to 12 Pages', included: true },
+                        { text: 'WooCommerce Setup', included: true },
+                        { text: 'Speed Optimization', included: true },
+                        { text: 'Advanced SEO', included: true }
                     ]
                 },
                 {
@@ -754,11 +754,11 @@ const DATA = {
                     desc: 'Full-scale WordPress solution for large businesses.',
                     features: [
                         { text: 'Custom Theme Development', included: true },
-                        { text: 'Unlimited Pages',          included: true },
-                        { text: 'Advanced WooCommerce',     included: true },
-                        { text: 'Custom Plugin Dev',        included: true },
-                        { text: 'Full Security Suite',      included: true },
-                        { text: '3 Months Free Support',    included: true }
+                        { text: 'Unlimited Pages', included: true },
+                        { text: 'Advanced WooCommerce', included: true },
+                        { text: 'Custom Plugin Dev', included: true },
+                        { text: 'Full Security Suite', included: true },
+                        { text: '3 Months Free Support', included: true }
                     ]
                 }
             ]
@@ -766,26 +766,26 @@ const DATA = {
     ],
 
     contactDetails: [
-        { icon: 'fas fa-envelope',       label: 'Email',    value: 'myasirtech4831@gmail.com',  href: 'mailto:myasirtech4831@gmail.com'       },
-        { icon: 'fab fa-github',         label: 'GitHub',   value: 'github.com/YasirAwan4831',  href: 'https://github.com/YasirAwan4831'       },
-        { icon: 'fas fa-map-marker-alt', label: 'Location', value: 'Islamabad, Pakistan',        href: null                                    },
-        { icon: 'fas fa-clock',          label: 'Response', value: 'Within 24 hours',            href: null                                    }
+        { icon: 'fas fa-envelope', label: 'Email', value: 'myasirtech4831@gmail.com', href: 'mailto:myasirtech4831@gmail.com' },
+        { icon: 'fab fa-github', label: 'GitHub', value: 'github.com/YasirAwan4831', href: 'https://github.com/YasirAwan4831' },
+        { icon: 'fas fa-map-marker-alt', label: 'Location', value: 'Islamabad, Pakistan', href: null },
+        { icon: 'fas fa-clock', label: 'Response', value: 'Within 24 hours', href: null }
     ],
 
     footerLinks: {
         quickLinks: [
-            { label: 'Home',       href: '#home'       },
-            { label: 'About',      href: '#about'      },
-            { label: 'Projects',   href: '#projects'   },
-            { label: 'Skills',     href: '#skills'     },
+            { label: 'Home', href: '#home' },
+            { label: 'About', href: '#about' },
+            { label: 'Projects', href: '#projects' },
+            { label: 'Skills', href: '#skills' },
             { label: 'Experience', href: '#experience' },
-            { label: 'Blog',       href: '#blog'       }
+            { label: 'Blog', href: '#blog' }
         ],
         services: [
             { label: 'Full Stack Dev', href: '#services' },
-            { label: 'Frontend Dev',   href: '#services' },
+            { label: 'Frontend Dev', href: '#services' },
             { label: 'Graphic Design', href: '#services' },
-            { label: 'WordPress Dev',  href: '#services' }
+            { label: 'WordPress Dev', href: '#services' }
         ]
     }
 
@@ -1056,40 +1056,23 @@ const RENDER = {
     },
 
     testimonials() {
-        const el = document.getElementById('testiWrap');
+        const el = document.getElementById('testiGrid');
         if (!el) return;
         const stars = (n) => Array(n).fill('<i class="fas fa-star"></i>').join('');
-        el.innerHTML = `
-            <div class="testi-track" id="testiTrack">
-                ${DATA.testimonials.map(t => `
-                    <div class="testi-card">
-                        <span class="testi-q">"</span>
-                        <p class="testi-text">${t.text}</p>
-                        <div class="testi-author">
-                            <div class="testi-av">${t.initial}</div>
-                            <div class="testi-info">
-                                <strong>${t.name}</strong>
-                                <span>${t.role}</span>
-                            </div>
-                            <div class="testi-stars">${stars(t.stars)}</div>
-                        </div>
+        el.innerHTML = DATA.testimonials.map((t, i) => `
+            <div class="testi-card" data-aos="fade-up" data-aos-delay="${i * 100}">
+                <span class="testi-q">"</span>
+                <p class="testi-text">${t.text}</p>
+                <div class="testi-author">
+                    <div class="testi-av">${t.initial}</div>
+                    <div class="testi-info">
+                        <strong>${t.name}</strong>
+                        <span>${t.role}</span>
                     </div>
-                `).join('')}
-            </div>
-            <div class="testi-ctrl">
-                <button class="t-btn" id="testiPrev" aria-label="Previous">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="t-dots" id="testiDots">
-                    ${DATA.testimonials.map((_, i) => `
-                        <span class="t-dot${i === 0 ? ' on' : ''}"></span>
-                    `).join('')}
+                    <div class="testi-stars">${stars(t.stars)}</div>
                 </div>
-                <button class="t-btn" id="testiNext" aria-label="Next">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
             </div>
-        `;
+        `).join('');
     },
 
     blog() {
@@ -1291,7 +1274,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* ── CUSTOM CURSOR ───────────────────────────────────────────── */
 (function initCursor() {
-    const dot     = document.getElementById('cursorDot');
+    const dot = document.getElementById('cursorDot');
     const outline = document.getElementById('cursorOutline');
     if (!dot || !outline || window.innerWidth <= 1024) return;
 
@@ -1301,25 +1284,25 @@ document.addEventListener('DOMContentLoaded', () => {
         mx = e.clientX;
         my = e.clientY;
         dot.style.left = mx + 'px';
-        dot.style.top  = my + 'px';
+        dot.style.top = my + 'px';
     });
 
     const animate = () => {
         ox += (mx - ox) * 0.15;
         oy += (my - oy) * 0.15;
         outline.style.left = ox + 'px';
-        outline.style.top  = oy + 'px';
+        outline.style.top = oy + 'px';
         requestAnimationFrame(animate);
     };
     animate();
 
     document.querySelectorAll('a, button, .proj-card, .blog-card, .plan-card, .s-item').forEach(el => {
         el.addEventListener('mouseenter', () => {
-            dot.style.transform     = 'translate(-50%,-50%) scale(2)';
+            dot.style.transform = 'translate(-50%,-50%) scale(2)';
             outline.style.transform = 'translate(-50%,-50%) scale(1.5)';
         });
         el.addEventListener('mouseleave', () => {
-            dot.style.transform     = 'translate(-50%,-50%) scale(1)';
+            dot.style.transform = 'translate(-50%,-50%) scale(1)';
             outline.style.transform = 'translate(-50%,-50%) scale(1)';
         });
     });
@@ -1328,9 +1311,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* ── NAVBAR ──────────────────────────────────────────────────── */
 (function initNavbar() {
-    const navbar   = document.getElementById('navbar');
-    const menuBtn  = document.getElementById('menuBtn');
-    const navMenu  = document.getElementById('navMenu');
+    const navbar = document.getElementById('navbar');
+    const menuBtn = document.getElementById('menuBtn');
+    const navMenu = document.getElementById('navMenu');
     const themeBtn = document.getElementById('themeBtn');
     const sections = document.querySelectorAll('section[id]');
     let lastScroll = 0;
@@ -1344,9 +1327,9 @@ document.addEventListener('DOMContentLoaded', () => {
         /* Active nav highlight */
         const scrollPos = window.scrollY + 100;
         sections.forEach(section => {
-            const top  = section.offsetTop;
-            const h    = section.offsetHeight;
-            const id   = section.id;
+            const top = section.offsetTop;
+            const h = section.offsetHeight;
+            const id = section.id;
             const link = document.querySelector(`.nav-link[href="#${id}"]`);
             if (link) link.classList.toggle('active', scrollPos >= top && scrollPos < top + h);
         });
@@ -1418,7 +1401,7 @@ document.getElementById('backTop')?.addEventListener('click', () => {
         del ? ci-- : ci++;
 
         if (!del && ci === cur.length) { del = true; setTimeout(tick, 2000); return; }
-        if (del && ci === 0)           { del = false; pi = (pi + 1) % phrases.length; }
+        if (del && ci === 0) { del = false; pi = (pi + 1) % phrases.length; }
 
         setTimeout(tick, del ? 50 : 100);
     };
@@ -1449,9 +1432,9 @@ function initCounters() {
             entry.target.querySelectorAll('.counter').forEach(el => {
                 const target = parseInt(el.dataset.target) || 0;
                 const suffix = el.dataset.suffix || '';
-                const step   = target / (1400 / 16);
-                let count    = 0;
-                const timer  = setInterval(() => {
+                const step = target / (1400 / 16);
+                let count = 0;
+                const timer = setInterval(() => {
                     count = Math.min(count + step, target);
                     el.textContent = Math.floor(count) + suffix;
                     if (count >= target) clearInterval(timer);
@@ -1467,9 +1450,9 @@ function initCounters() {
 
 /* ── PROJECT FILTER & LOAD MORE ──────────────────────────────── */
 function initProjects() {
-    const grid      = document.getElementById('projectsGrid');
+    const grid = document.getElementById('projectsGrid');
     const filtersEl = document.getElementById('projectFilters');
-    const loadBtn   = document.getElementById('loadMoreBtn');
+    const loadBtn = document.getElementById('loadMoreBtn');
     let showing = 6;
 
     filtersEl?.addEventListener('click', (e) => {
@@ -1495,82 +1478,16 @@ function initProjects() {
 
 
 /* ── TESTIMONIALS SLIDER ─────────────────────────────────────── */
-/* ✅ FIX: این function کو DOMContentLoaded کے اندر call کیا جاتا ہے
-         تاکہ RENDER.testimonials() پہلے run ہو اور elements موجود ہوں */
-function initTestimonials() {
-    const track = document.getElementById('testiTrack');
-    const dots  = document.getElementById('testiDots');
-    const prev  = document.getElementById('testiPrev');
-    const next  = document.getElementById('testiNext');
-
-    /* اگر elements نہ ملیں تو exit */
-    if (!track || !dots || !prev || !next) {
-        console.warn('Testimonials: elements not found');
-        return;
-    }
-
-    let current = 0;
-    const total = DATA.testimonials.length;
-    let autoSlide = setInterval(goNext, 5000);
-
-    function goTo(index) {
-        current = (index + total) % total;
-        track.style.transform = `translateX(-${current * 100}%)`;
-        dots.querySelectorAll('.t-dot').forEach((dot, i) => {
-            dot.classList.toggle('on', i === current);
-        });
-    }
-
-    function goNext() { goTo(current + 1); }
-    function goPrev() { goTo(current - 1); }
-
-    prev.addEventListener('click', () => {
-        clearInterval(autoSlide);
-        goPrev();
-        autoSlide = setInterval(goNext, 5000);
-    });
-
-    next.addEventListener('click', () => {
-        clearInterval(autoSlide);
-        goNext();
-        autoSlide = setInterval(goNext, 5000);
-    });
-
-    dots.querySelectorAll('.t-dot').forEach((dot, i) => {
-        dot.addEventListener('click', () => {
-            clearInterval(autoSlide);
-            goTo(i);
-            autoSlide = setInterval(goNext, 5000);
-        });
-    });
-
-    /* Touch swipe support */
-    let touchStart = 0;
-    track.addEventListener('touchstart', (e) => {
-        touchStart = e.touches[0].clientX;
-    }, { passive: true });
-
-    track.addEventListener('touchend', (e) => {
-        const diff = touchStart - e.changedTouches[0].clientX;
-        if (Math.abs(diff) > 40) {
-            clearInterval(autoSlide);
-            diff > 0 ? goNext() : goPrev();
-            autoSlide = setInterval(goNext, 5000);
-        }
-    });
-
-    /* Pause on hover */
-    track.addEventListener('mouseenter', () => clearInterval(autoSlide));
-    track.addEventListener('mouseleave', () => { autoSlide = setInterval(goNext, 5000); });
-}
+/* ── TESTIMONIALS (NOW A GRID) ─────────────────────────────── */
+// Slider logic removed as requested.
 
 
 /* ── BLOG MODAL ──────────────────────────────────────────────── */
 function initBlogModal() {
-    const modal    = document.getElementById('blogModal');
+    const modal = document.getElementById('blogModal');
     const closeBtn = document.getElementById('closeModal');
     const modalBody = document.getElementById('modalContent');
-    const blogGrid  = document.getElementById('blogGrid');
+    const blogGrid = document.getElementById('blogGrid');
     if (!modal) return;
 
     function openPost(id) {
@@ -1616,15 +1533,15 @@ function initBlogModal() {
 
 /* ── CONTACT FORM ────────────────────────────────────────────── */
 function initContactForm() {
-    const form   = document.getElementById('contactForm');
+    const form = document.getElementById('contactForm');
     const status = document.getElementById('formStatus');
-    const btn    = document.getElementById('submitBtn');
+    const btn = document.getElementById('submitBtn');
     if (!form) return;
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
-        const name    = form.querySelector('#cName')?.value.trim();
-        const email   = form.querySelector('#cEmail')?.value.trim();
+        const name = form.querySelector('#cName')?.value.trim();
+        const email = form.querySelector('#cEmail')?.value.trim();
         const message = form.querySelector('#cMsg')?.value.trim();
 
         if (!name || !email || !message) {
@@ -1650,7 +1567,7 @@ function initContactForm() {
 
     function showStatus(cls, msg) {
         if (!status) return;
-        status.className   = `form-status ${cls}`;
+        status.className = `form-status ${cls}`;
         status.textContent = msg;
         status.style.display = 'block';
     }
@@ -1681,7 +1598,7 @@ document.addEventListener('DOMContentLoaded', () => {
     RENDER.footer();
 
     /* 2. پھر سارے features initialize کریں */
-    initTestimonials(); /* ✅ FIX: RENDER.testimonials() کے بعد */
+    /* Removed Testimonial Slider  */
     initProjects();
     initBlogModal();
     initContactForm();
