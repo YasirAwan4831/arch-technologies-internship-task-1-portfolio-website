@@ -24,13 +24,13 @@ const DATA = {
         whatsapp: 'https://call.whatsapp.com/voice/Vy6FTmNnwmVqZPvP7XFIfk',
         youtube: 'https://www.youtube.com/@YasirTech-t1d',
         medium: 'https://medium.com/@YasirAwan4831',
-        website: 'https://muhammadyaser-portfolio.netlify.app',
-        cv: '#',
+        website: 'https://yasirawaninfo.vercel.app/',
+        cv: '/assets/m-cv.pdf',
         avatar: '/assets/my-pic.jpeg',
         bio: [
             'I am a passionate <strong>Full Stack Developer</strong> with 2+ years of hands-on experience building modern web applications. I specialize in creating interactive, responsive and performance-optimized digital experiences from frontend to backend.',
             'My journey began with a deep curiosity for how the web works, which evolved into a professional career crafting clean code and beautiful interfaces. I thrive on transforming complex problems into elegant, user-friendly solutions.',
-            'Currently pursuing my <strong>BS in Information Technology</strong> while working as a Frontend Developer at Apexcify Technologies — I am always learning, building and improving every single day.'
+            'I am currently continuing my studies in <strong>Information Technology</strong> while constantly learning new technologies and improving my development skills.'
         ],
         ambitions: [
             'Build scalable SaaS products that solve real-world problems',
@@ -43,7 +43,7 @@ const DATA = {
     heroStats: [
         { num: '25+', label: 'Projects' },
         { num: '2+', label: 'Years Exp.' },
-        { num: '3+', label: 'Internships' }
+        { num: '4+', label: 'Internships' }
     ],
 
     typedPhrases: [
@@ -65,16 +65,16 @@ const DATA = {
         { icon: 'fab fa-github', url: 'https://github.com/YasirAwan4831', label: 'GitHub' },
         { icon: 'fab fa-linkedin-in', url: 'https://www.linkedin.com/in/yasirawan4831/', label: 'LinkedIn' },
         { icon: 'fas fa-envelope', url: 'mailto:myasirtech4831@gmail.com', label: 'Email' },
-        { icon: 'fas fa-link', url: 'https://linktr.ee/yasirawan4831', label: 'Linktree' }
+        { icon: 'fas fa-link', url: 'https://yasirawan4831.github.io/futuristic-links-dashboard/', label: 'Linktree' }
     ],
 
     allSocials: [
         { icon: 'fab fa-linkedin-in', url: 'https://www.linkedin.com/in/yasirawan4831/', label: 'LinkedIn' },
         { icon: 'fab fa-github', url: 'https://github.com/YasirAwan4831', label: 'GitHub' },
         { icon: 'fab fa-instagram', url: 'https://www.instagram.com/yasirawan4831/', label: 'Instagram' },
-        { icon: 'fas fa-link', url: 'https://linktr.ee/yasirawan4831', label: 'Linktree' },
+        { icon: 'fas fa-link', url: 'https://yasirawan4831.github.io/futuristic-links-dashboard/', label: 'Linktree' },
         { icon: 'fab fa-facebook-f', url: 'https://www.facebook.com/profile.php?id=61575935942197', label: 'Facebook' },
-        { icon: 'fab fa-whatsapp', url: 'https://call.whatsapp.com/voice/Vy6FTmNnwmVqZPvP7XFIfk', label: 'WhatsApp', cls: 'wa' },
+        { icon: 'fas fa-c', url: 'https://coderlegion.com/user/YasirAwan4831', label: 'CoderLegion' },
         { icon: 'fab fa-youtube', url: 'https://www.youtube.com/@YasirTech-t1d', label: 'YouTube' },
         { icon: 'fab fa-medium-m', url: 'https://medium.com/@YasirAwan4831', label: 'Medium' }
     ],
@@ -94,7 +94,7 @@ const DATA = {
             category: 'frontend',
             year: '2025',
             description: 'A fully responsive and modern portfolio website built with clean UI/UX principles. Highlights professional skills, completed projects and technical expertise.',
-            image: 'https://yasirawaninfo.vercel.app/assets/all-photo/portfolio-pic.png',
+            image: '/assets/project/portfolio-website.jpeg',
             tools: ['React', 'JavaScript', 'CSS3', 'Vite', 'GSAP', 'EmailJS'],
             role: 'Solo Developer — Design, Development & Deployment',
             outcome: 'Deployed on Netlify & Vercel, 100% Lighthouse score',
@@ -107,7 +107,7 @@ const DATA = {
             category: 'fullstack',
             year: '2025',
             description: 'A modern React + Tailwind CSS dashboard for Investors & Entrepreneurs with role-based UI, meeting calendar, payment mock UI and guided onboarding.',
-            image: 'https://via.placeholder.com/600x400',
+            image: '/assets/business-app.png',
             tools: ['React', 'Tailwind CSS', 'React Joyride', 'Dashboard', 'Role-Based Auth'],
             role: 'Frontend Architect — UI System, Routing & Component Library',
             outcome: 'Complete investor-entrepreneur platform deployed on Vercel',
@@ -116,24 +116,52 @@ const DATA = {
         },
         {
             id: 3,
+            title: 'DigiTech Solutions Corporate Web',
+            category: 'Frontend',
+            year: '2026',
+            description: 'A frontend-focused architectural overview of DigiTech Solutions, highlighting AI-driven services, system design & product vision for demonstration & recruitment purposes.',
+            image: '/assets/digitech.jpg',
+            tools: ['React', 'Tailwind CSS', 'React Joyride', 'Dashboard', 'Role-Based Auth'],
+            role: 'Frontend Architect — UI System, Routing & Component Library',
+            outcome: 'Complete investor-entrepreneur platform deployed on Vercel',
+            liveLink: 'https://github.com/YasirAwan4831/digitech-solutions-ai-platform-overview00/blob/main/README.md',
+            githubLink: 'https://github.com/YasirAwan4831/digitech-solutions-ai-platform-overview00'
+        },
+        {
+            id: 3,
             title: 'E-Commerce Store',
             category: 'fullstack',
             year: '2025',
             description: 'A fully functional e-commerce website with product listings, dynamic pages, cart handling and complete user-side shopping experience.',
-            image: 'https://via.placeholder.com/600x400',
+            image: '/assets/project/e-commerce.jpeg',
             tools: ['HTML5', 'CSS3', 'JavaScript', 'UI/UX', 'Responsive Design', 'Font Awesome'],
             role: 'Full Stack Developer — Architecture, UI & Cart Logic',
             outcome: '30+ products, smooth cart UX, deployed on Netlify',
             liveLink: 'https://yasirawan-devhub-corporation-intern.netlify.app/',
             githubLink: 'https://github.com/YasirAwan4831/developerhub-corporation-internship--Task_1_Ecommerce_Website'
         },
+
+        {
+            id: 0.3,
+            title: 'Typing Practice Web App',
+            category: 'fullstack',
+            year: '2026',
+            description: 'A modern typing practice web app built with React and Vite featuring speed tests, accuracy tracking, performance charts and history management.',
+            image: '/assets/typing-master-web.jpg',
+            tools: ['React', 'CSS3', 'JavaScript', 'localStorage', 'Dark Mode'],
+            role: 'Frontend Developer — Full Feature Build',
+            outcome: 'Persistent task management with zero backend dependency',
+            liveLink: 'https://typing-master-react-tau.vercel.app/',
+            githubLink: 'https://github.com/YasirAwan4831/typing-master-react'
+        },
+
         {
             id: 4,
             title: 'YARIS AI Smart Chatbot',
             category: 'python',
             year: '2025',
             description: 'An interactive AI-powered chatbot built with React, Node.js, JavaScript and Google Gemini AI. Delivers smart context-aware responses with intelligent conversation flow.',
-            image: 'https://via.placeholder.com/600x400',
+            image: '/assets/yaris-ai-chatbot.jpeg',
             tools: ['React', 'Node.js', 'JavaScript', 'Google Gemini AI', 'API Integration'],
             role: 'Full Stack Developer — AI Integration & UI Development',
             outcome: 'Context-aware chatbot with 95% response accuracy',
@@ -146,7 +174,7 @@ const DATA = {
             category: 'frontend',
             year: '2025',
             description: 'An interactive web-dev quiz app featuring 300+ MCQs, user login, timed questions and strict anti-cheating system that blocks copying and tab switching.',
-            image: 'https://via.placeholder.com/600x400',
+            image: '/assets/quiz-app.png',
             tools: ['HTML5', 'CSS3', 'JavaScript', 'Local Storage', 'Anti-Cheat System'],
             role: 'Frontend Developer — Game Logic, UI & Security System',
             outcome: '300+ MCQs, zero external dependencies, live on GitHub Pages',
@@ -159,12 +187,12 @@ const DATA = {
             category: 'fullstack',
             year: '2025',
             description: 'A modern product listing website with responsive design, smooth scroll, login/signup system, My Cart functionality and complete payment flow.',
-            image: 'https://via.placeholder.com/600x400',
+            image: '/assets/product-list.png',
             tools: ['JavaScript', 'HTML5', 'CSS3', 'Login System', 'Cart Logic', 'DOM Manipulation'],
             role: 'Frontend Developer — Full Feature Build from Scratch',
             outcome: 'Complete shopping flow without any framework — pure JS',
-            liveLink: 'https://github.com/YasirAwan4831/ApexcifyTechnologys-FrontendInternship/tree/main/task-2',
-            githubLink: 'https://github.com/YasirAwan4831/ApexcifyTechnologys-FrontendInternship/tree/main/task-2'
+            liveLink: 'https://github.com/YasirAwan4831/ApexcifyTechnologys-FrontendInternship/tree/main/product-listing-website_Task-3',
+            githubLink: 'https://github.com/YasirAwan4831/ApexcifyTechnologys-FrontendInternship/tree/main/product-listing-website_Task-3'
         },
         {
             id: 7,
@@ -172,7 +200,7 @@ const DATA = {
             category: 'frontend',
             year: '2025',
             description: 'A modern and responsive tourism website providing destination details, travel guides and popular attractions with dynamic JSON-powered content.',
-            image: 'https://via.placeholder.com/600x400',
+            image: '/assets/project/tourism-travel-website.jpeg',
             tools: ['HTML5', 'CSS3', 'JavaScript', 'React', 'TypeScript', 'React Router'],
             role: 'Frontend Developer — UI Design & JSON Data Integration',
             outcome: '50+ destination pages, fully responsive, live deployment',
@@ -185,7 +213,7 @@ const DATA = {
             category: 'frontend',
             year: '2025',
             description: 'A multi-page Business web application built as a Final Year Project, featuring structured UI, dynamic content, animations and responsive layout.',
-            image: 'https://via.placeholder.com/600x400',
+            image: '/assets/project/FYP-1.jpeg',
             tools: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'GSAP Animations'],
             role: 'Lead Developer — Full Project Lifecycle from Design to Deploy',
             outcome: 'FYP Grade A — Deployed on W3Spaces',
@@ -198,7 +226,7 @@ const DATA = {
             category: 'wordpress',
             year: '2024',
             description: 'A WordPress-based marketing agency website featuring service pages, portfolio section, contact forms and SEO-friendly layout.',
-            image: 'https://via.placeholder.com/600x400',
+            image: '/assets/project/wpproject.jpeg',
             tools: ['WordPress', 'Elementor', 'SEO', 'WooCommerce'],
             role: 'WordPress Developer — Design, SEO & Content Strategy',
             outcome: 'Fully functional agency site with SEO optimization',
@@ -211,7 +239,7 @@ const DATA = {
             category: 'python',
             year: '2024',
             description: 'A Python-based computer vision project using OpenCV focused on real-time image processing and analysis with 10+ filter operations.',
-            image: 'https://via.placeholder.com/600x400',
+            image: '/assets/python-project.png',
             tools: ['Python', 'OpenCV', 'Computer Vision', 'NumPy'],
             role: 'Python Developer — Algorithm Design & Implementation',
             outcome: 'Real-time image processing with 10+ filter operations',
@@ -224,7 +252,7 @@ const DATA = {
             category: 'frontend',
             year: '2024',
             description: 'A futuristic JavaScript-based links dashboard with animated UI, canvas particle effects and smooth dark/light theme toggle.',
-            image: 'https://via.placeholder.com/600x400',
+            image: '/assets/aii-links.png',
             tools: ['JavaScript', 'HTML5 Canvas', 'CSS Animations', 'Dark/Light Mode'],
             role: 'Frontend Developer — Creative UI & Canvas Animation',
             outcome: 'Viral-ready link-in-bio page with unique canvas effects',
@@ -232,17 +260,43 @@ const DATA = {
             githubLink: 'https://github.com/YasirAwan4831/futuristic-links-dashboard'
         },
         {
-            id: 12,
+            id: 13,
             title: 'To-Do List App',
-            category: 'frontend',
+            category: 'fullstack',
             year: '2024',
             description: 'A simple and interactive To-Do List application with add, edit, delete tasks, task counters, dark mode and localStorage data persistence.',
-            image: 'https://via.placeholder.com/600x400',
+            image: '/assets/project/todo-2.jpeg',
             tools: ['HTML5', 'CSS3', 'JavaScript', 'localStorage', 'Dark Mode'],
             role: 'Frontend Developer — Full Feature Build',
             outcome: 'Persistent task management with zero backend dependency',
-            liveLink: 'https://github.com/YasirAwan4831/todo-list-js-app',
-            githubLink: 'https://github.com/YasirAwan4831/todo-list-js-app'
+            liveLink: 'https://yasirawan4831.github.io/arch-technologies-internship-task-2-todo-list/',
+            githubLink: 'https://github.com/YasirAwan4831/arch-technologies-internship-task-2-todo-list'
+        },
+        {
+            id: 14,
+            title: 'Smart Calculator App',
+            category: 'frontend',
+            year: '2024',
+            description: 'A sleek and functional calculator app with standard arithmetic operations, percentage support, delete function and a clean modern UI design.',
+            image: '/assets/project/calculator.jpeg',
+            tools: ['HTML5', 'CSS3', 'JavaScript', 'DOM Manipulation'],
+            role: 'Frontend Developer — UI & Logic Build',
+            outcome: 'Fully functional calculator with clean design, zero libraries',
+            liveLink: 'https://github.com/YasirAwan4831/ApexcifyTechnologys-FrontendInternship/tree/main/Task01-Calculator',
+            githubLink: 'https://github.com/YasirAwan4831/ApexcifyTechnologys-FrontendInternship/tree/main/Task01-Calculator'
+        },
+        {
+            id: 15,
+            title: 'Futuristic Login Form UI',
+            category: 'frontend',
+            year: '2025',
+            description: 'A beautifully designed login & signup form with a dark futuristic UI, animated background, glassmorphism card and smooth transitions.',
+            image: '/assets/project/Login form.png',
+            tools: ['HTML5', 'CSS3', 'JavaScript', 'Glassmorphism', 'Animations'],
+            role: 'Frontend Developer — UI/UX Design & Implementation',
+            outcome: 'Production-ready auth UI with premium visual design',
+            liveLink: 'https://github.com/YasirAwan4831/modern-login-singup-page',
+            githubLink: 'https://github.com/YasirAwan4831/modern-login-singup-page'
         }
     ],
 
@@ -255,7 +309,7 @@ const DATA = {
                 { icon: 'fab fa-css3-alt', name: 'CSS3', color: '#1572b6' },
                 { icon: 'fab fa-js', name: 'JavaScript', color: '#f7df1e' },
                 { icon: 'fab fa-react', name: 'React', color: '#61dafb' },
-                { icon: 'fab fa-vuejs', name: 'Vue.js', color: '#42b883' },
+                { icon: 'fas fa-bolt', name: 'Vite', color: '#646cff' },
                 { icon: 'fas fa-code', name: 'TypeScript', color: '#007acc' }
             ]
         },
@@ -300,147 +354,6 @@ const DATA = {
         'Adaptability', 'Critical Thinking', 'Mentoring', 'Leadership'
     ],
 
-    experience: [
-        {
-            role: 'Frontend Web Developer',
-            company: 'Apexcify Technologies',
-            date: '2025 – Present',
-            type: 'Full-Time',
-            desc: 'Currently building modern, responsive interfaces and collaborating with design and backend teams for seamless UX.',
-            contributions: [
-                'Built and maintained 5+ client-facing web applications',
-                'Integrated REST APIs and improved page load performance by 40%',
-                'Led UI redesign for flagship product — increased user retention',
-                'Mentored junior developers on React best practices'
-            ],
-            tech: ['HTML/CSS', 'JavaScript', 'React', 'TypeScript', 'Node.js', 'API Integration'],
-            link: 'https://github.com/YasirAwan4831/ApexcifyTechnologys-FrontendInternship',
-            linkLabel: 'View Projects',
-            linkIcon: 'fab fa-github'
-        },
-        {
-            role: 'Frontend Web Developer Intern',
-            company: 'DevHub Corporation',
-            date: '2025',
-            type: 'Internship',
-            desc: 'Created responsive and user-friendly interfaces using modern web technologies. Worked in an agile team environment.',
-            contributions: [
-                'Developed e-commerce frontend for a live client project',
-                'Collaborated in an agile team of 5 developers',
-                'Improved mobile responsiveness across all pages',
-                'Wrote clean, maintainable code with proper documentation'
-            ],
-            tech: ['HTML', 'CSS', 'JavaScript', 'React', 'Figma', 'GitHub'],
-            link: 'https://github.com/YasirAwan4831/developerhub-corporation-internship--Task_1_Ecommerce_Website',
-            linkLabel: 'View Projects',
-            linkIcon: 'fab fa-github'
-        },
-        {
-            role: 'Career Development Intern',
-            company: 'Pakistan Career Fire',
-            date: '2025',
-            type: 'Internship',
-            desc: 'Supported students and professionals in career growth through mentoring and content creation.',
-            contributions: [
-                'Mentored 20+ students on career planning and CV writing',
-                'Created digital content for social media channels',
-                'Managed client communications and scheduling',
-                'Organized career development workshops and webinars'
-            ],
-            tech: ['Career Counseling', 'Communication', 'Content Creation', 'Client Relations'],
-            link: 'https://www.linkedin.com/in/yasirawan4831/',
-            linkLabel: 'View Certificate',
-            linkIcon: 'fab fa-linkedin'
-        }
-    ],
-
-    expStats: [
-        { num: '2+', label: 'Years Exp.' },
-        { num: '3+', label: 'Internships' },
-        { num: '12+', label: 'Projects' },
-        { num: '100%', label: 'Satisfaction' }
-    ],
-
-    education: [
-        {
-            icon: 'fas fa-university',
-            date: '2023 – 2027',
-            degree: 'Bachelor of Science — Information Technology',
-            school: 'Western Norway University of Applied Sciences',
-            desc: 'Expanding knowledge in Information Technology through continuous learning and practical experience.',
-            tags: ['IT', 'Networking', 'Software Engineering', 'Databases']
-        },
-        {
-            icon: 'fas fa-laptop',
-            date: '2024 – 2026',
-            degree: 'IT Diploma',
-            school: 'RED-C Institute of Engineering & Technology, Islamabad',
-            desc: 'Building strong practical skills in computer applications, programming fundamentals and database management.',
-            tags: ['Programming', 'IT Tools', 'Computer Applications', 'Networking']
-        },
-        {
-            icon: 'fas fa-school',
-            date: '2019 – 2021',
-            degree: 'Secondary School Certificate (SSC)',
-            school: 'Government High Secondary School Ghumawan',
-            desc: 'Completed SSC with a strong academic foundation in science and mathematics.',
-            tags: ['Science', 'Mathematics', 'Computer']
-        }
-    ],
-
-    certifications: [
-        { icon: 'fab fa-react', name: 'React Development Bootcamp', issuer: 'DevHub Corporation', year: '2025', link: 'https://www.linkedin.com/in/yasirawan4831/' },
-        { icon: 'fab fa-js', name: 'JavaScript Advanced Concepts', issuer: 'Udemy', year: '2024', link: '#' },
-        { icon: 'fab fa-figma', name: 'UI/UX Design Fundamentals', issuer: 'Figma Community', year: '2024', link: '#' },
-        { icon: 'fab fa-wordpress', name: 'WordPress & WooCommerce', issuer: 'Online Platform', year: '2024', link: '#' },
-        { icon: 'fas fa-briefcase', name: 'Career Development Program', issuer: 'Pakistan Career Fire', year: '2025', link: 'https://www.linkedin.com/in/yasirawan4831/' },
-        { icon: 'fab fa-python', name: 'Python & OpenCV Basics', issuer: 'Self-Paced', year: '2024', link: '#' }
-    ],
-
-    achievements: [
-        {
-            icon: 'fas fa-trophy',
-            year: '2025',
-            title: 'Best Intern of the Month',
-            issuer: 'DevHub Corporation',
-            desc: 'Recognized for exceptional frontend development work and delivering high-quality projects ahead of schedule.'
-        },
-        {
-            icon: 'fas fa-star',
-            year: '2025',
-            title: '12+ Projects Milestone',
-            issuer: 'Personal Portfolio',
-            desc: 'Successfully completed 12+ real-world web development projects across various domains.'
-        },
-        {
-            icon: 'fas fa-certificate',
-            year: '2025',
-            title: 'Career Development Excellence',
-            issuer: 'Pakistan Career Fire',
-            desc: 'Awarded for outstanding contribution to student career mentorship and professional development.'
-        },
-        {
-            icon: 'fas fa-code',
-            year: '2024',
-            title: 'Open Source Contributor',
-            issuer: 'GitHub',
-            desc: 'Maintained a public GitHub profile with 12+ repositories showcasing diverse technical skills.'
-        },
-        {
-            icon: 'fas fa-robot',
-            year: '2025',
-            title: 'AI Integration Developer',
-            issuer: 'Self Achievement',
-            desc: 'Successfully built and deployed YARIS AI Chatbot integrating Google Gemini API with React.'
-        },
-        {
-            icon: 'fas fa-rocket',
-            year: '2025',
-            title: '3 Internships in 1 Year',
-            issuer: 'Multiple Companies',
-            desc: 'Completed 3 professional internships in a single year at various tech companies.'
-        }
-    ],
 
     testimonials: [
         {
