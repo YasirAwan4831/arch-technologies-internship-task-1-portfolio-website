@@ -525,8 +525,8 @@ experience: [
     },
     {
         text: 'He is currently working on our corporate website and has shown good understanding of requirements and modern web design practices.',
-        name: 'Client (DG Tech Solutions)',
-        role: 'Project Client',
+        name: 'Mehwish Fatima',
+        role: 'Co Founder DigiTech Solutions',
         initial: 'C',
         stars: 5
     }
@@ -541,7 +541,7 @@ experience: [
             readTime: '8 min read',
             author: 'Muhammad Yasir',
             excerpt: 'A step-by-step guide to building a professional developer portfolio using React, TypeScript and modern CSS techniques that stand out to recruiters.',
-            image: 'https://via.placeholder.com/600x400',
+            image: 'assets/blog1.jpg',
             content: `
                 <h3>Why Your Portfolio Matters</h3>
                 <p>In today's competitive tech market, your portfolio is your most powerful tool. Recruiters spend an average of <strong>6 seconds</strong> looking at a resume — but a well-built portfolio keeps them engaged for minutes.</p>
@@ -564,7 +564,7 @@ experience: [
             readTime: '7 min read',
             author: 'Muhammad Yasir',
             excerpt: 'My personal journey from learning HTML to working at tech companies — the mindset, strategies and resources that helped me get hired fast.',
-            image: 'https://via.placeholder.com/600x400',
+            image: '',
             content: `
                 <h3>The Beginning: Learning in Chaos</h3>
                 <p>I started learning web development in 2022 with nothing but YouTube tutorials and a burning desire to build things. No bootcamp, no CS degree — just consistency.</p>
