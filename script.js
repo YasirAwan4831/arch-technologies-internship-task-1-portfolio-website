@@ -430,7 +430,7 @@ experience: [
             tags: ['IT', 'Coding', 'Tech', 'Software Development', 'Databases', 'Problem Solving']
         },
         {
-            icon: 'fas fa-laptop',
+            icon: 'fas fa-graduation-cap',
             date: '2024 – 2026',
             degree: 'Information Technology Diploma',
             school: 'RED-C Institute of Engineering & Technology, Islamabad',
@@ -450,10 +450,10 @@ experience: [
   certifications: [
     { icon: 'fas fa-code', name: 'Full Stack Web Development Diploma', issuer: 'National Institute of TSEP', year: '2024–2025', link: '/assets/nistep.jpg' },
     { icon: 'fab fa-wordpress', name: 'WordPress Web Development', issuer: 'Digi-Skills Training Program', year: '2025', link: 'assets/wp.pdf'},
-    { icon: 'fab fa-html5', name: 'Frontend Development Intern Certificate', issuer: 'Developer Hub Corporation', year: '2025', link: 'https://www.linkedin.com/in/yasirawan4831/' },
-    { icon: 'fas fa-laptop-code', name: 'Frontend Development Intern Certificate', issuer: 'Apexcify Technologies', year: '2026', link: '#' },
-    { icon: 'fas fa-shield-alt', name: 'Freelancing & Earning Skills (DigiSkills)', issuer: 'DigiSkills.pk', year: '2025', link: '#' },
-    { icon: 'fas fa-briefcase', name: 'Career Development Internship', issuer: 'Pakistan Career Fire', year: '2025', link: 'https://www.linkedin.com/in/yasirawan4831/' }
+    { icon: 'fas fa-globe', name: 'Frontend Development Intern ', issuer: 'Developer Hub Corporation', year: '2025-2026', link: 'assets/devh.jpg' },
+    { icon: 'fas fa-laptop-code', name: 'Frontend Development Intern', issuer: 'Apexcify Technologies', year: '2026-2026', link: 'assets/aaa.jpg' },
+    { icon: 'fas fa-shield-alt', name: 'Freelancing & Earning Skills (DigiSkills)', issuer: 'DigiSkills.pk', year: '2025', link: 'assets/frf.pdf' },
+    { icon: 'fas fa-briefcase', name: 'Career Development Internship', issuer: 'Pakistan Career Fire', year: '2025-2026', link: 'assets/pcf.jpg' }
 ],
 
     achievements: [
