@@ -266,33 +266,21 @@ const DATA = {
             year: '2024',
             description: 'A simple and interactive To-Do List application with add, edit, delete tasks, task counters, dark mode and localStorage data persistence.',
             image: '/assets/todo.jpg',
-            tools: ['JavaScript', 'localStorage', 'Dark Mode', 'Web API'],
+            tools: ['JavaScript', 'localStorage', 'Dark Mode', 'Web API', 'Vanilla JS', 'JSON', 'HTML', 'CSS3', 'Fonts'],
             role: 'Frontend Developer — Full Feature Build',
             outcome: 'Persistent task management with zero backend dependency',
             liveLink: 'https://yasirawan4831.github.io/arch-technologies-internship-task-2-todo-list/',
             githubLink: 'https://github.com/YasirAwan4831/arch-technologies-internship-task-2-todo-list'
         },
+
         {
             id: 15,
-            title: 'Smart Calculator App',
-            category: 'frontend',
-            year: '2024',
-            description: 'A sleek and functional calculator app with standard arithmetic operations, percentage support, delete function and a clean modern UI design.',
-            image: '/assets/project/calculator.jpeg',
-            tools: ['HTML5', 'CSS3', 'JavaScript', 'DOM Manipulation'],
-            role: 'Frontend Developer — UI & Logic Build',
-            outcome: 'Fully functional calculator with clean design, zero libraries',
-            liveLink: 'https://github.com/YasirAwan4831/ApexcifyTechnologys-FrontendInternship/tree/main/Task01-Calculator',
-            githubLink: 'https://github.com/YasirAwan4831/ApexcifyTechnologys-FrontendInternship/tree/main/Task01-Calculator'
-        },
-        {
-            id: 16,
             title: 'Futuristic Login Form UI',
             category: 'frontend',
             year: '2025',
             description: 'A beautifully designed login & signup form with a dark futuristic UI, animated background, glassmorphism card and smooth transitions.',
             image: '/assets/project/Login form.png',
-            tools: ['HTML5', 'CSS3', 'JavaScript', 'Glassmorphism', 'Animations'],
+            tools: ['HTML5', 'CSS3', 'JavaScript', 'Glassmorphism', 'Animations', 'Email Validation', 'Responsive Design', 'Git & GitHub'],
             role: 'Frontend Developer — UI/UX Design & Implementation',
             outcome: 'Production-ready auth UI with premium visual design',
             liveLink: 'https://github.com/YasirAwan4831/modern-login-singup-page',
@@ -305,24 +293,24 @@ const DATA = {
             icon: 'fas fa-laptop-code',
             title: 'Frontend',
             items: [
-                { icon: 'fab fa-html5', name: 'HTML5', color: '#e34f26' },
+                { icon: 'fab fa-html5', name: 'HTML5', color: '#f63601' },
                 { icon: 'fab fa-css3-alt', name: 'CSS3', color: '#1572b6' },
-                { icon: 'fab fa-js', name: 'JavaScript', color: '#f7df1e' },
-                { icon: 'fab fa-react', name: 'React', color: '#61dafb' },
+                { icon: 'fab fa-js', name: 'JavaScript', color: '#fee103' },
+                { icon: 'fab fa-react', name: 'React', color: 'rgb(59, 209, 250)' },
                 { icon: 'fas fa-bolt', name: 'Vite', color: '#646cff' },
-                { icon: 'fas fa-code', name: 'TypeScript', color: '#007acc' }
+                { icon: 'fas fa-code', name: 'TypeScript', color: '#0095f8' }
             ]
         },
         {
             icon: 'fas fa-server',
             title: 'Backend',
             items: [
-                { icon: 'fab fa-node-js', name: 'Node.js', color: '#339933' },
+                { icon: 'fab fa-node-js', name: 'Node.js', color: '#25df25' },
                 { icon: 'fas fa-database', name: 'Express.js', color: '#00e5a0' },
-                { icon: 'fab fa-php', name: 'PHP', color: '#8892bf' },
-                { icon: 'fab fa-python', name: 'Python', color: '#3776ab' },
+                { icon: 'fab fa-php', name: 'PHP', color: '#7b93fe' },
+                { icon: 'fab fa-python', name: 'Python', color: '#2c8ddc' },
                 { icon: 'fas fa-plug', name: 'REST APIs', color: '#ff6b6b' },
-                { icon: 'fas fa-code', name: 'JSON', color: '#f7df1e' }
+                { icon: 'fas fa-code', name: 'JSON', color: '#f8db00' }
             ]
         },
         {
@@ -330,8 +318,8 @@ const DATA = {
             title: 'Database',
             items: [
                 { icon: 'fas fa-database', name: 'MongoDB', color: '#47a248' },
-                { icon: 'fas fa-database', name: 'MySQL', color: '#00758f' },
-                { icon: 'fas fa-fire', name: 'Firebase', color: '#f7941d' }
+                { icon: 'fas fa-database', name: 'MySQL', color: '#1682d4' },
+                { icon: 'fas fa-fire', name: 'Firebase', color: '#f7501d' }
             ]
         },
         {
@@ -342,8 +330,8 @@ const DATA = {
                 { icon: 'fas fa-palette', name: 'Canva', color: '#00c4cc' },
                 { icon: 'fab fa-git-alt', name: 'Git', color: '#f05032' },
                 { icon: 'fab fa-github', name: 'GitHub', color: '#6e5494' },
-                { icon: 'fab fa-wordpress', name: 'WordPress', color: '#21759b' },
-                { icon: 'fas fa-robot', name: 'OpenAI API', color: '#412991' }
+                { icon: 'fab fa-wordpress', name: 'WordPress', color: '#35bfff' },
+                { icon: 'fas fa-robot', name: 'Open AI', color: '#412991' }
             ]
         }
     ],
@@ -357,59 +345,59 @@ const DATA = {
 experience: [
     {
         role: 'Full Stack Web Development Intern',
-        company: 'Arch Technologies',
+        company: 'ARCH Technologies',
         date: 'Mar 2026 – Present',
         type: 'Internship',
         desc: 'Currently working on real-world web development tasks, focusing on both frontend and backend fundamentals while improving practical development skills.',
         contributions: [
-            'Building responsive web applications using HTML, CSS, and JavaScript',
+            'Building responsive web applications using HTML, CSS and JavaScript',
             'Developing projects like portfolio websites and task-based applications',
             'Practicing clean code structure and problem-solving techniques',
             'Continuously learning full stack development concepts'
         ],
-        tech: ['HTML', 'CSS', 'JavaScript', 'LocalStorage', 'GitHub'],
-        link: '',
-        linkLabel: '',
-        linkIcon: ''
+        tech: ['React', 'TypeScript', 'JavaScript', 'Node.JS', 'Database', 'UI/UX', 'Full Stack' ],
+        link: 'https://github.com/YasirAwan4831/arch-technologies-internship-task-1-portfolio-website',
+        linkLabel: 'View Work',
+        linkIcon: 'fab fa-github'
     },
     {
         role: 'Frontend Web Developer Intern',
         company: 'Apexcify Technologies',
-        date: 'Nov 2025 – Jan 2026',
+        date: 'Dec 2025 – Jan 2026',
         type: 'Internship',
         desc: 'Worked on building modern and responsive user interfaces while improving frontend development skills in a professional environment.',
         contributions: [
-            'Developed responsive UI components using HTML, CSS, and JavaScript',
+            'Developed responsive UI components using HTML, CSS, JavaScript and  React',
             'Worked on real-world frontend tasks and layouts',
             'Improved website responsiveness for different screen sizes',
             'Collaborated with team members on development tasks'
         ],
-        tech: ['HTML', 'CSS', 'JavaScript', 'Responsive Design', 'GitHub'],
+        tech: ['JavaScript', 'UI/UX', 'HTML', 'CSS', 'Responsive Design', 'E-Commerce UI', 'Frontend Dev.', 'Git & GitHub'],
         link: 'https://github.com/YasirAwan4831/ApexcifyTechnologys-FrontendInternship',
         linkLabel: 'View Work',
         linkIcon: 'fab fa-github'
     },
     {
         role: 'Frontend Web Developer Intern',
-        company: 'Developer Hub Corporation',
-        date: '2025',
+        company: 'DeveloperHub Corporation',
+        date: 'Nov 2025 – Jan 2026',
         type: 'Internship',
         desc: 'Gained hands-on experience in frontend web development by working on real projects and improving UI/UX skills.',
         contributions: [
-            'Built user-friendly web pages using HTML, CSS, and JavaScript',
+            'Built user-friendly web pages using React / React Joyride, Tailwind CSS and Typescript',
             'Worked on project-based learning tasks',
             'Improved layout design and UI structure',
-            'Used GitHub for version control and project submission'
+            'Used GitHub for version control and project submission, Vercel  For deployment'
         ],
-        tech: ['HTML', 'CSS', 'JavaScript', 'GitHub'],
-        link: 'https://github.com/YasirAwan4831/developerhub-corporation-internship--Task_1_Ecommerce_Website',
-        linkLabel: 'View Project',
+        tech: ['React', 'React Joyride', 'Typescript', 'JavaScript', 'Tailwind CSS', 'Role-Based UI', 'Vercel', 'Git', 'GitHub'],
+        link: 'https://github.com/YasirAwan4831/Nexus',
+        linkLabel: 'View Work',
         linkIcon: 'fab fa-github'
     },
     {
         role: 'Career Development Intern',
         company: 'Pakistan Career Fire',
-        date: '2025',
+        date: 'Oct 2025 – Dec 2025',
         type: 'Internship',
         desc: 'Worked on career development initiatives, helping students improve their professional skills and career direction.',
         contributions: [
@@ -418,17 +406,17 @@ experience: [
             'Improved communication and mentoring skills',
             'Participated in online sessions and activities'
         ],
-        tech: ['Communication', 'Career Guidance', 'Content Creation'],
-        link: 'https://www.linkedin.com/in/yasirawan4831/',
-        linkLabel: 'View Profile',
+        tech: ['Communication', 'Career Guidance', 'Freelancing', 'Teamwork ', 'Content Creation', 'Digital Workflow', 'Digital Workflow'],
+        link: 'https://www.linkedin.com/posts/yasirawan4831_pakistancareerfair-pcfinternship-finalprojectpresentation-activity-7411395614892244992-mZAJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFyt-1EB5XKMOcxukQpAzVmx6pIKiXdCz64',
+        linkLabel: 'View Certificate',
         linkIcon: 'fab fa-linkedin'
     }
 ],
 
     expStats: [
         { num: '2+', label: 'Years Exp.' },
-        { num: '3+', label: 'Internships' },
-        { num: '12+', label: 'Projects' },
+        { num: '4+', label: 'Internships' },
+        { num: '20+', label: 'Projects' },
         { num: '100%', label: 'Satisfaction' }
     ],
 
@@ -439,15 +427,15 @@ experience: [
             degree: 'Bachelor of Science — Information Technology',
             school: 'Western Norway University of Applied Sciences',
             desc: 'Expanding knowledge in Information Technology through continuous learning and practical experience.',
-            tags: ['IT', 'Coding', 'Networking', 'Software Engineering', 'Databases']
+            tags: ['IT', 'Coding', 'Tech', 'Software Development', 'Databases', 'Problem Solving']
         },
         {
             icon: 'fas fa-laptop',
             date: '2024 – 2026',
-            degree: 'IT Diploma',
+            degree: 'Information Technology Diploma',
             school: 'RED-C Institute of Engineering & Technology, Islamabad',
-            desc: 'Building strong practical skills in computer applications, programming fundamentals and database management.',
-            tags: ['Programming', 'IT Tools', 'Computer Applications', 'Networking']
+            desc: 'Currently pursuing a Diploma in Information Technology, focusing on practical skills in web development, programming and modern IT tools.',
+            tags: ['Programming', 'IT Tools', 'Computer Applications', 'Networking', 'MS Office']
         },
         {
             icon: 'fas fa-school',
@@ -455,13 +443,13 @@ experience: [
             degree: 'Secondary School Certificate (SSC)',
             school: 'Government High Secondary School Ghumawan',
             desc: 'Completed SSC with a strong academic foundation in science and mathematics.',
-            tags: ['Science', 'Mathematics', 'Chemistry', 'Biology', 'Physics' ]
+            tags: ['Biology', 'Chemistry', 'Physics', 'Mathematics', 'Science Basics']
         }
     ],
 
   certifications: [
-    { icon: 'fas fa-code', name: 'Full Stack Web Development Diploma', issuer: 'Skill Development Program', year: '2025–2026', link: '#' },
-    { icon: 'fab fa-wordpress', name: 'WordPress Web Development', issuer: 'Online Platform', year: '2025', link: '#' },
+    { icon: 'fas fa-code', name: 'Full Stack Web Development Diploma', issuer: 'National Institute of TSEP', year: '2024–2025', link: '/assets/nistep.jpg' },
+    { icon: 'fab fa-wordpress', name: 'WordPress Web Development', issuer: 'Digi-Skills Training Program', year: '2025', link: 'assets/wp.pdf'},
     { icon: 'fab fa-html5', name: 'Frontend Development Intern Certificate', issuer: 'Developer Hub Corporation', year: '2025', link: 'https://www.linkedin.com/in/yasirawan4831/' },
     { icon: 'fas fa-laptop-code', name: 'Frontend Development Intern Certificate', issuer: 'Apexcify Technologies', year: '2026', link: '#' },
     { icon: 'fas fa-shield-alt', name: 'Freelancing & Earning Skills (DigiSkills)', issuer: 'DigiSkills.pk', year: '2025', link: '#' },
