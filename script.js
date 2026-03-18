@@ -457,80 +457,80 @@ experience: [
 ],
 
     achievements: [
-        {
-            icon: 'fas fa-trophy',
-            year: '2025',
-            title: 'Best Intern of the Month',
-            issuer: 'DevHub Corporation',
-            desc: 'Recognized for exceptional frontend development work and delivering high-quality projects ahead of schedule.'
-        },
-        {
-            icon: 'fas fa-star',
-            year: '2025',
-            title: '12+ Projects Milestone',
-            issuer: 'Personal Portfolio',
-            desc: 'Successfully completed 12+ real-world web development projects across various domains.'
-        },
-        {
-            icon: 'fas fa-certificate',
-            year: '2025',
-            title: 'Career Development Excellence',
-            issuer: 'Pakistan Career Fire',
-            desc: 'Awarded for outstanding contribution to student career mentorship and professional development.'
-        },
-        {
-            icon: 'fas fa-code',
-            year: '2024',
-            title: 'Open Source Contributor',
-            issuer: 'GitHub',
-            desc: 'Maintained a public GitHub profile with 12+ repositories showcasing diverse technical skills.'
-        },
-        {
+    {
+        icon: 'fas fa-briefcase',
+        year: '2025',
+        title: 'Frontend Development Intern',
+        issuer: 'DevHub Corporation',
+        desc: 'Completed internship by building responsive web interfaces and improving practical frontend development skills.'
+    },
+    {
+        icon: 'fas fa-star',
+        year: '2025',
+        title: '12+ Projects Milestone',
+        issuer: 'Personal Portfolio',
+        desc: 'Successfully built 12+ web development projects to strengthen practical skills and problem-solving ability.'
+    },
+    {
+        icon: 'fas fa-trophy',
+        year: '2025',
+        title: 'Top Performing Intern',
+        issuer: 'Pakistan Career Fire',
+        desc: 'Recognized for active participation and strong contribution in career development and mentoring activities.'
+    },
+    {
+        icon: 'fas fa-code',
+        year: '2024',
+        title: 'GitHub Portfolio',
+        issuer: 'GitHub',
+        desc: 'Maintained multiple repositories showcasing consistent learning and development practice.'
+    },
+    {
             icon: 'fas fa-robot',
             year: '2025',
             title: 'AI Integration Developer',
             issuer: 'Self Achievement',
             desc: 'Successfully built and deployed YARIS AI Chatbot integrating Google Gemini API with React.'
-        },
-        {
-            icon: 'fas fa-rocket',
-            year: '2025',
-            title: '3 Internships in 1 Year',
-            issuer: 'Multiple Companies',
-            desc: 'Completed 3 professional internships in a single year at various tech companies.'
-        }
-    ],
+    },
+    {
+        icon: 'fas fa-rocket',
+        year: '2025',
+        title: 'Multiple Internships Experience',
+        issuer: 'Professional Growth',
+        desc: 'Completed multiple internships to gain real-world experience and improve development skills.'
+    }
+],
 
     testimonials: [
-        {
-            text: 'Yasir delivered an exceptional e-commerce website that exceeded all our expectations. His attention to detail, clean code quality and communication throughout the project was outstanding. Highly recommended for any frontend or full stack project.',
-            name: 'Ali Hassan',
-            role: 'CEO, Tech Startup — Islamabad',
-            initial: 'A',
-            stars: 5
-        },
-        {
-            text: 'Working with Yasir was a great experience. He understands both the technical and creative aspects of web development. Our portfolio website looks stunning and loads perfectly on all devices. His design sense is truly exceptional.',
-            name: 'Sara Khan',
-            role: 'Marketing Manager — DevHub Corporation',
-            initial: 'S',
-            stars: 5
-        },
-        {
-            text: 'Yasir is a dedicated and talented developer. He completed our tourism website project with great attention to user experience and delivered it ahead of schedule. Communication was always clear and professional throughout.',
-            name: 'Muhammad Usman',
-            role: 'Project Lead — Apexcify Technologies',
-            initial: 'M',
-            stars: 5
-        },
-        {
-            text: 'I was impressed by Yasir\'s ability to quickly understand our business requirements and translate them into a beautiful WordPress website. The SEO and page speed improvements he made were remarkable.',
-            name: 'Fatima Malik',
-            role: 'Business Owner — Islamabad',
-            initial: 'F',
-            stars: 5
-        }
-    ],
+    {
+        text: 'Yasir helped improve our social media presence with consistent content and better engagement strategies. Very cooperative and easy to work with.',
+        name: 'Ahmed R.',
+        role: 'Small Business Owner',
+        initial: 'A',
+        stars: 5
+    },
+    {
+        text: 'He optimized my LinkedIn profile professionally and guided me on personal branding. I started getting more profile views and connections.',
+        name: 'Hassan M.',
+        role: 'Job Seeker',
+        initial: 'H',
+        stars: 5
+    },
+    {
+        text: 'Yasir designed a clean and professional CV for me. The layout and presentation were impressive and helped me stand out.',
+        name: 'Usman K.',
+        role: 'Student',
+        initial: 'U',
+        stars: 5
+    },
+    {
+        text: 'He is currently working on our corporate website and has shown good understanding of requirements and modern web design practices.',
+        name: 'Client (DG Tech Solutions)',
+        role: 'Project Client',
+        initial: 'C',
+        stars: 5
+    }
+],
 
     blogPosts: [
         {
