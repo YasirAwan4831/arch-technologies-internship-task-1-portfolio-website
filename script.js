@@ -657,7 +657,69 @@ experience: [
         </a></p>
     `
 },
+{
+    id: 'blog-005',
+    title: 'Building My Personal Portfolio Website: Design, Decisions and Growth',
+    category: 'UI/UX Design',
+    date: '2026',
+    readTime: '4 min read',
+    author: 'Muhammad Yasir',
+    excerpt: 'A look into how I designed and structured my personal portfolio with a focus on clarity, simplicity and strong user experience.',
+    image: 'assets/uiux.webp',
+    content: `
+        <h3>Why I Rebuilt My Portfolio</h3>
+        <p>I wanted my portfolio to clearly represent my skills, mindset and development journey instead of just displaying projects.</p>
 
+        <h3>Design Approach</h3>
+        <p>I focused on clean UI with proper layout hierarchy, readable typography and balanced spacing to create a smooth user experience.</p>
+
+        <h3>Technical Focus</h3>
+        <p>The project was built to be responsive, scalable and easy to maintain, ensuring it works well across all devices.</p>
+
+        <h3>Challenges & Learnings</h3>
+        <p>Working on layout consistency and responsiveness helped me understand how small UI decisions impact overall user experience.</p>
+
+        <blockquote>“A portfolio is not just a website — it’s a reflection of your growth as a developer.”</blockquote>
+
+        <p><strong>🔗 Read Full Blog:</strong> 
+        <a href="https://coderlegion.com/10105/building-my-personal-portfolio-website-design-decisions-and-growth" target="_blank">
+        Click Here
+        </a></p>
+    `
+},
+{
+    id: 'blog-006',
+    title: 'What Really Powers a Modern Web Application? 5 Core Layers Explained',
+    category: 'Web Development',
+    date: '2026',
+    readTime: '4 min read',
+    author: 'Muhammad Yasir',
+    excerpt: 'A simple breakdown of the five core layers behind modern web applications and how they work together to create scalable systems.',
+    image: 'assets/linke.png',
+    content: `
+        <h3>Introduction</h3>
+        <p>Modern web applications may look simple from the outside, but behind the scenes they are built on structured layers that work together seamlessly.</p>
+
+        <h3>User Interface (UI)</h3>
+        <p>This is the visual layer where users interact with the application through layouts, buttons and responsive design.</p>
+
+        <h3>API Layer</h3>
+        <p>APIs act as a bridge between frontend and backend, allowing data to be fetched, updated and displayed dynamically.</p>
+
+        <h3>Logic Layer</h3>
+        <p>This layer handles validation, authentication and business rules to ensure the application behaves correctly.</p>
+
+        <h3>Database</h3>
+        <p>The database stores and manages data, ensuring it is organized, secure and easily accessible when needed.</p>
+
+        <blockquote>“Great applications are built on strong architecture — not just beautiful interfaces.”</blockquote>
+
+        <p><strong>🔗 Read Full Blog:</strong> 
+        <a href="https://www.linkedin.com/pulse/5-core-layers-modern-web-applications-why-every-developer-yasir-jqtjf/" target="_blank">
+        Click Here
+        </a></p>
+    `
+}
     ],
 
     serviceGroups: [
