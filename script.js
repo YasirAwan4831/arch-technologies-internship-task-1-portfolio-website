@@ -533,140 +533,71 @@ experience: [
 ],
 
     blogPosts: [
-        {
-            id: 'blog-001',
-            title: 'Building a Modern Portfolio with React & TypeScript',
-            category: 'Web Development',
-            date: 'March 15, 2025',
-            readTime: '8 min read',
-            author: 'Muhammad Yasir',
-            excerpt: 'A step-by-step guide to building a professional developer portfolio using React, TypeScript and modern CSS techniques that stand out to recruiters.',
-            image: 'assets/blog1.jpg',
-            content: `
-                <h3>Why Your Portfolio Matters</h3>
-                <p>In today's competitive tech market, your portfolio is your most powerful tool. Recruiters spend an average of <strong>6 seconds</strong> looking at a resume — but a well-built portfolio keeps them engaged for minutes.</p>
-                <h3>Step 1: Planning Your Structure</h3>
-                <p>Before writing a single line of code, spend time planning. Your portfolio should answer three questions immediately: Who are you? What can you do? How to reach you?</p>
-                <h3>Step 2: Setting Up React with TypeScript</h3>
-                <p>I chose Vite over Create React App because it is significantly faster for development:</p>
-                <p><code>npm create vite@latest my-portfolio -- --template react-ts</code></p>
-                <blockquote>"The best portfolio is not the most complex one — it's the one that clearly communicates your value in under 10 seconds."</blockquote>
-                <h3>Step 3: Design System First</h3>
-                <p>Before coding components, define your design system. I created CSS custom properties for colors, spacing, typography and shadows. This keeps the entire project consistent.</p>
-                <div class="tip-box"><strong>💡 Pro Tip:</strong> Use PageSpeed Insights to score your portfolio. Aim for 90+ on all metrics. This itself becomes a talking point in interviews.</div>
-            `
-        },
-        {
-            id: 'blog-002',
-            title: 'How I Landed 3 Internships in One Year as a Self-Taught Developer',
-            category: 'Career',
-            date: 'February 28, 2025',
-            readTime: '7 min read',
-            author: 'Muhammad Yasir',
-            excerpt: 'My personal journey from learning HTML to working at tech companies — the mindset, strategies and resources that helped me get hired fast.',
-            image: '',
-            content: `
-                <h3>The Beginning: Learning in Chaos</h3>
-                <p>I started learning web development in 2022 with nothing but YouTube tutorials and a burning desire to build things. No bootcamp, no CS degree — just consistency.</p>
-                <h3>Phase 1: Building the Foundation</h3>
-                <p>I spent the first 6 months mastering the fundamentals — HTML, CSS and JavaScript. I did not move to frameworks until I could build a complete website from scratch.</p>
-                <blockquote>"Don't chase frameworks — chase fundamentals. Frameworks come and go, fundamentals are forever."</blockquote>
-                <h3>The Application Strategy That Worked</h3>
-                <p>I applied to 50+ companies in 2 months. Most did not reply. Some rejected me. But the ones that responded — I was ready. My GitHub profile was active, my portfolio was live and my code was clean.</p>
-                <div class="tip-box"><strong>💡 Key Insight:</strong> The company that gave me my first internship found me through my GitHub profile, not my application. Keep your GitHub active.</div>
-            `
-        },
-        {
-            id: 'blog-003',
-            title: 'Top 10 UI/UX Principles Every Frontend Developer Must Know',
-            category: 'Design',
-            date: 'January 20, 2025',
-            readTime: '6 min read',
-            author: 'Muhammad Yasir',
-            excerpt: 'The essential UI/UX design principles that separate good developers from exceptional ones — with practical examples from real projects.',
-            image: 'https://via.placeholder.com/600x400',
-            content: `
-                <h3>Why Frontend Developers Need Design Knowledge</h3>
-                <p>The best frontend developers are not just coders — they are communicators. Every component they build is communicating something to the user.</p>
-                <h3>Principle 1: Visual Hierarchy</h3>
-                <p>Users scan, they don't read. Your page needs a clear visual hierarchy that guides the eye naturally. Use size, weight, color and spacing to communicate importance.</p>
-                <h3>Principle 2: The 8px Grid System</h3>
-                <p>Never use random spacing values. Use multiples of 8px for all spacing decisions: 8, 16, 24, 32, 48, 64. This creates invisible structure that the eye perceives as harmony.</p>
-                <h3>Principle 3: Micro-interactions</h3>
-                <p>The difference between a good interface and a great one is often in the details — a button that changes color smoothly on hover, a card that lifts when approached.</p>
-                <div class="tip-box"><strong>💡 Quick Test:</strong> Cover your screen with your palm. Can you still see and interact with the most important elements? If not, your mobile design needs work.</div>
-            `
-        },
-        {
-            id: 'blog-004',
-            title: 'JavaScript vs TypeScript: Which Should You Learn First?',
-            category: 'Web Development',
-            date: 'January 5, 2025',
-            readTime: '5 min read',
-            author: 'Muhammad Yasir',
-            excerpt: 'The honest answer to the most common question I get from beginner developers — and the path I recommend based on real experience.',
-            image: 'https://via.placeholder.com/600x400',
-            content: `
-                <h3>The Question I Get Asked Most</h3>
-                <p>Every week someone asks me: "Should I learn TypeScript or JavaScript?" My answer is always the same — and today I will explain the full reasoning.</p>
-                <h3>The Short Answer</h3>
-                <p>Learn JavaScript first — completely and thoroughly. TypeScript is JavaScript with a type system on top. If you do not understand JavaScript deeply, TypeScript will just add confusion.</p>
-                <blockquote>"TypeScript catches bugs at compile time that JavaScript would catch at runtime — but only if you understand what the bugs are in the first place."</blockquote>
-                <div class="tip-box"><strong>💡 Roadmap:</strong> HTML/CSS (2 months) → JavaScript Fundamentals (3 months) → Build 5 Projects → React (2 months) → TypeScript (ongoing).</div>
-            `
-        },
-        {
-            id: 'blog-005',
-            title: 'WordPress vs Custom Code: When to Use Each One',
-            category: 'Web Development',
-            date: 'December 10, 2024',
-            readTime: '6 min read',
-            author: 'Muhammad Yasir',
-            excerpt: 'From building marketing agency WordPress sites to custom React apps — the decision framework I use when advising clients.',
-            image: 'https://via.placeholder.com/600x400',
-            content: `
-                <h3>The Question That Changes Every Project</h3>
-                <p>The first question I ask every client: "Who will manage this website after I deliver it?" This single question determines whether I recommend WordPress or custom code.</p>
-                <h3>Choose WordPress When:</h3>
-                <ul>
-                    <li>The client wants to update content themselves without a developer</li>
-                    <li>Budget is limited and timeline is tight</li>
-                    <li>The site is primarily content-driven (blog, marketing, portfolio)</li>
-                </ul>
-                <h3>Choose Custom Code When:</h3>
-                <ul>
-                    <li>The application has complex, custom functionality</li>
-                    <li>Performance is critical</li>
-                    <li>You need dashboards, real-time features or API integrations</li>
-                </ul>
-                <blockquote>"The right tool is not always the most impressive one — it's the one that solves the problem best for the specific situation."</blockquote>
-            `
-        },
-        {
-            id: 'blog-006',
-            title: 'Git & GitHub for Beginners: The Workflow That Saved My Projects',
-            category: 'Tools',
-            date: 'November 22, 2024',
-            readTime: '5 min read',
-            author: 'Muhammad Yasir',
-            excerpt: 'The essential Git workflow every developer should know — with the commands I use daily and mistakes you can avoid.',
-            image: 'https://via.placeholder.com/600x400',
-            content: `
-                <h3>The Day I Lost a Week of Work</h3>
-                <p>Early in my learning journey, I was working on a project without version control. My SSD had an issue and I lost 6 days of work in an instant. That day I learned Git — and I have never worked without it since.</p>
-                <h3>The 5 Commands You Need Daily</h3>
-                <ul>
-                    <li><code>git status</code> — What changed since my last commit?</li>
-                    <li><code>git add .</code> — Stage all changes</li>
-                    <li><code>git commit -m "message"</code> — Save a checkpoint</li>
-                    <li><code>git push</code> — Upload to GitHub</li>
-                    <li><code>git pull</code> — Download changes from GitHub</li>
-                </ul>
-                <blockquote>"Commit early, commit often. A commit message should complete the sentence: If applied, this commit will..."</blockquote>
-                <div class="tip-box"><strong>💡 Habit:</strong> Commit after every meaningful change — not at the end of the day. Smaller commits are easier to review, revert and understand.</div>
-            `
-        }
-    ],
+{
+    id: 'blog-001',
+    title: 'How I Structured My React Portfolio Like a Real Product',
+    category: 'Web Development',
+    date: '2026',
+    readTime: '5 min read',
+    author: 'Muhammad Yasir',
+    excerpt: 'Instead of building my portfolio as a simple demo, I structured it like a real-world product using component-based architecture, clean folder structure and production-level thinking.',
+    image: 'assets/portfolio-pic.png',
+    content: `
+        <h3>Thinking Like a Product Builder</h3>
+        <p>When I started building my React portfolio, my goal was simple — don’t treat it like a demo, treat it like a real product. This mindset completely changed how I approached structure, design and development.</p>
+
+        <h3>Component-Based Structure</h3>
+        <p>I used a reusable component approach where each section (Home, About, Projects, Contact) was built as a separate component. This made the code clean, scalable and easy to maintain.</p>
+
+        <h3>Clean Folder Organization</h3>
+        <p>Instead of mixing everything, I followed a structured folder system with clear naming conventions. This reflects how real-world React applications are built.</p>
+
+        <h3>Real-World Features</h3>
+        <p>I added practical features like a working contact form, responsive design and performance optimization. This made the project feel like a complete product instead of just UI.</p>
+
+        <h3>Deployment</h3>
+        <p>Finally, I deployed the project on Vercel for fast performance and easy updates.</p>
+
+        <blockquote>“Structure matters as much as design when building real-world applications.”</blockquote>
+
+        <p><strong>🔗 Read Full Blog:</strong> 
+        <a href="https://coderlegion.com/11143/how-i-structured-my-react-portfolio-like-a-real-product" target="_blank">
+        Click Here
+        </a></p>
+     `
+      },
+
+{
+    id: 'blog-002',
+    title: 'Google Gemini’s Personal Intelligence: How AI Is Becoming Context-Aware',
+    category: 'Artificial Intelligence',
+    date: '2026',
+    readTime: '4 min read',
+    author: 'Muhammad Yasir',
+    excerpt: 'Google Gemini is evolving into a context-aware AI system with Personal Intelligence, changing how users interact with technology and how developers build intelligent applications.',
+    image: 'assets/blog3.webp',
+    content: `
+        <h3>Introduction</h3>
+        <p>Artificial Intelligence is rapidly evolving, and Google Gemini’s Personal Intelligence feature shows a major shift toward context-aware systems that understand user intent.</p>
+
+        <h3>What is Personal Intelligence?</h3>
+        <p>This feature allows Gemini to analyze contextual signals and provide responses that are more relevant, personalized and useful in real-world scenarios.</p>
+
+        <h3>Multi-App Integration</h3>
+        <p>Gemini connects with services like Gmail, YouTube and Search to understand user behavior and deliver smarter, more accurate responses.</p>
+
+        <h3>Why It Matters</h3>
+        <p>This evolution highlights the future of AI — systems that understand not just queries, but the purpose behind them, improving user experience and automation.</p>
+
+        <blockquote>“The future of AI is not just answering questions — it’s understanding context.”</blockquote>
+
+        <p><strong>🔗 Read Full Blog:</strong> 
+        <a href="https://medium.com/@YasirAwan4831/google-geminis-personal-intelligence-how-ai-is-becoming-truly-context-aware-a7de3dbb3ce6" target="_blank">
+        Click Here
+        </a></p>
+    `
+},
+
 
     serviceGroups: [
         {
