@@ -597,7 +597,68 @@ experience: [
         </a></p>
     `
 },
+{
+    id: 'blog-003',
+    title: 'A Clean Frontend Folder Structure Every Developer Should Know',
+    category: 'Web Development',
+    date: '2026',
+    readTime: '4 min read',
+    author: 'Muhammad Yasir',
+    excerpt: 'A simple and scalable frontend folder structure that improves code readability, maintainability and team collaboration in modern web applications.',
+    image: 'assets/blog1.jpg',
+    content: `
+        <h3>Why Structure Matters</h3>
+        <p>Modern frontend applications are complex, and without a proper structure, projects quickly become messy and hard to manage.</p>
 
+        <h3>Clean & Scalable Approach</h3>
+        <p>A well-organized folder structure helps separate components, logic and assets, making the codebase easier to understand and maintain.</p>
+
+        <h3>Key Folders</h3>
+        <p>Important folders include components for reusable UI, pages for main views, hooks for logic, and utils for helper functions.</p>
+
+        <h3>Benefits</h3>
+        <p>Clean structure improves collaboration, speeds up development and makes scaling projects much easier in the long run.</p>
+
+        <blockquote>“A clean structure leads to clean code — and clean code builds better software.”</blockquote>
+
+        <p><strong>🔗 Read Full Blog:</strong> 
+        <a href="https://coderlegion.com/12441/a-clean-frontend-folder-structure-every-developer-should-know" target="_blank">
+        Click Here
+        </a></p>
+    `
+},
+{
+    id: 'blog-004',
+    title: 'How I Landed 3 Internships in One Year as a Self-Taught Developer',
+    category: 'Career',
+    date: '2026',
+    readTime: '5 min read',
+    author: 'Muhammad Yasir',
+    excerpt: 'My journey of becoming a self-taught developer and securing multiple internships through consistency, smart learning and real-world project building.',
+    image: 'assets/blog2.png',
+    content: `
+        <h3>Starting Without a Clear Path</h3>
+        <p>I began learning web development on my own using free resources. It was not easy, but consistency helped me move forward step by step.</p>
+
+        <h3>Focus on Fundamentals</h3>
+        <p>Instead of jumping into frameworks, I focused on HTML, CSS and JavaScript first. This strong base made everything else easier later.</p>
+
+        <h3>Building Projects & Portfolio</h3>
+        <p>I worked on multiple small and real-world projects to improve my skills and showcase my work through a portfolio and GitHub.</p>
+
+        <h3>Applying & Staying Consistent</h3>
+        <p>I applied to many opportunities, faced rejections, but stayed consistent. Eventually, I secured multiple internships through effort and persistence.</p>
+
+        <blockquote>“Consistency and real projects matter more than certificates.”</blockquote>
+
+        <p><strong>🔗 Read More on Medium:</strong> 
+        <a href="https://medium.com/@YasirAwan4831" target="_blank">
+        Visit Medium
+        </a></p>
+    `
+},
+
+    ],
 
     serviceGroups: [
         {
