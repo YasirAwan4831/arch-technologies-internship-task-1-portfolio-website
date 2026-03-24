@@ -50,6 +50,7 @@ const DATA = {
         'Full Stack Developer',
         'Frontend Engineer',
         'UI / UX Enthusiast',
+        'SoftWare Developer',
         'WordPress Developer',
         'AI Integrations Dev',
         'Problem Solver'
@@ -507,6 +508,7 @@ experience: [
         name: 'Ahmed R.',
         role: 'Small Business Owner',
         initial: 'A',
+        avatar: null,
         stars: 5
     },
     {
@@ -514,21 +516,24 @@ experience: [
         name: 'Hassan M.',
         role: 'Job Seeker',
         initial: 'H',
-        stars: 5
+        avatar: null,
+        stars: 4.5
     },
     {
         text: 'Yasir designed a clean and professional CV for me. The layout and presentation were impressive and helped me stand out.',
         name: 'Usman K.',
         role: 'Student',
         initial: 'U',
+        avatar: null,
         stars: 5
     },
     {
         text: 'He is currently working on our corporate website and has shown good understanding of requirements and modern web design practices.',
         name: 'Mehwish Fatima',
         role: 'Co Founder DigiTech Solutions',
-        initial: 'C',
-        stars: 5
+        initial: 'M',
+        avatar: null,
+        stars: 4.5
     }
 ],
 
@@ -1171,13 +1176,33 @@ const RENDER = {
     testimonials() {
         const el = document.getElementById('testiGrid');
         if (!el) return;
-        const stars = (n) => Array(n).fill('<i class="fas fa-star"></i>').join('');
+
+        /* Renders full, half, and empty stars for any rating like 4.5 */
+        const stars = (rating) => {
+            let html = '';
+            for (let i = 1; i <= 5; i++) {
+                if (rating >= i) {
+                    html += '<i class="fas fa-star"></i>';
+                } else if (rating >= i - 0.5) {
+                    html += '<i class="fas fa-star-half-alt"></i>';
+                } else {
+                    html += '<i class="far fa-star"></i>';
+                }
+            }
+            return html;
+        };
+
+        /* Renders avatar: image if provided, else gradient initial */
+        const avatar = (t) => t.avatar
+            ? `<img src="${t.avatar}" alt="${t.name}" class="testi-av-img">`
+            : `<div class="testi-av">${t.initial}</div>`;
+
         el.innerHTML = DATA.testimonials.map((t, i) => `
             <div class="testi-card" data-aos="fade-up" data-aos-delay="${i * 100}">
                 <span class="testi-q">"</span>
                 <p class="testi-text">${t.text}</p>
                 <div class="testi-author">
-                    <div class="testi-av">${t.initial}</div>
+                    ${avatar(t)}
                     <div class="testi-info">
                         <strong>${t.name}</strong>
                         <span>${t.role}</span>
@@ -1435,22 +1460,33 @@ document.addEventListener('DOMContentLoaded', () => {
         const cur = window.scrollY;
         navbar?.classList.toggle('scrolled', cur > 50);
 
-
-
-        /* Active nav highlight */
-        const scrollPos = window.scrollY + 100;
-        sections.forEach(section => {
-            const top = section.offsetTop;
-            const h = section.offsetHeight;
-            const id = section.id;
-            const link = document.querySelector(`.nav-link[href="#${id}"]`);
-            if (link) link.classList.toggle('active', scrollPos >= top && scrollPos < top + h);
-        });
-
         /* Back to top */
         document.getElementById('backTop')?.classList.toggle('show', cur > 400);
 
     }, { passive: true });
+
+    /* ── Scroll Spy via IntersectionObserver ──────────────────── */
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    function setActive(id) {
+        navLinks.forEach(l => {
+            const href = l.getAttribute('href');
+            l.classList.toggle('active', href === `#${id}`);
+        });
+    }
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                setActive(entry.target.id);
+            }
+        });
+    }, {
+        rootMargin: '-30% 0px -60% 0px',   /* trigger when ~top 30-40% of viewport */
+        threshold: 0
+    });
+
+    document.querySelectorAll('section[id]').forEach(sec => sectionObserver.observe(sec));
 
     /* Hamburger */
     menuBtn?.addEventListener('click', () => {
