@@ -14,7 +14,7 @@ const DATA = {
     personal: {
         name: 'Muhammad Yasir',
         role: 'Full Stack Developer',
-        email: 'myasirtech4831@gmail.com',
+        email: 'my3154831409@gmail.com',
         location: 'Islamabad, Pakistan',
         github: 'https://github.com/YasirAwan4831',
         linkedin: 'https://www.linkedin.com/in/yasirawan4831/',
@@ -65,7 +65,7 @@ const DATA = {
     socials: [
         { icon: 'fab fa-github', url: 'https://github.com/YasirAwan4831', label: 'GitHub' },
         { icon: 'fab fa-linkedin-in', url: 'https://www.linkedin.com/in/yasirawan4831/', label: 'LinkedIn' },
-        { icon: 'fas fa-envelope', url: 'mailto:myasirtech4831@gmail.com', label: 'Email' },
+        { icon: 'fas fa-envelope', url: 'mailto:my3154831409@gmail.com', label: 'Email' },
         { icon: 'fas fa-link', url: 'https://yasirawan4831.github.io/futuristic-links-dashboard/', label: 'Linktree' }
     ],
 
@@ -724,7 +724,37 @@ experience: [
         Click Here
         </a></p>
     `
-}
+},
+{
+    id: 'blog-007',
+    title: 'Is AI Creating More Cybersecurity Problems Than It Solves?',
+    category: 'Artificial Intelligence',
+    date: '2026',
+    readTime: '4 min read',
+    author: 'Muhammad Yasir',
+    excerpt: 'AI is accelerating software development, but it may also be increasing security risks. Here’s a simple breakdown of the balance between speed and security.',
+    image: 'assets/blogse.webp',
+    content: `
+        <h3>AI & Rapid Development</h3>
+        <p>Artificial Intelligence is helping developers build faster than ever, generating code and automating tasks within minutes.</p>
+
+        <h3>The Hidden Risk</h3>
+        <p>With faster development comes more vulnerabilities. Security often struggles to keep up, leading to issues like weak validation and outdated dependencies.</p>
+
+        <h3>AI as a Double-Edged Sword</h3>
+        <p>While AI introduces risks, it also helps detect them through automated analysis and smarter security tools.</p>
+
+        <h3>Why It Matters</h3>
+        <p>For developers and startups, ignoring security can lead to serious problems. Secure coding and regular checks are now essential.</p>
+
+        <blockquote>“The future of development is not just fast — it must also be secure.”</blockquote>
+
+        <p><strong>🔗 Read Full Blog:</strong> 
+        <a href="https://medium.com/@YasirAwan4831/is-ai-creating-more-cybersecurity-problems-than-it-solves-086f39c9845b" target="_blank">
+        Click Here
+        </a></p>
+    `
+},
     ],
 
     serviceGroups: [
@@ -884,7 +914,7 @@ experience: [
     ],
 
     contactDetails: [
-        { icon: 'fas fa-envelope', label: 'Email', value: 'myasirtech4831@gmail.com', href: 'mailto:myasirtech4831@gmail.com' },
+        { icon: 'fas fa-envelope', label: 'Email', value: 'my3154831409@gmail.com', href: 'mailto:my3154831409@gmail.com' },
         { icon: 'fab fa-github', label: 'GitHub', value: 'github.com/YasirAwan4831', href: 'https://github.com/YasirAwan4831' },
         { icon: 'fas fa-map-marker-alt', label: 'Location', value: 'Islamabad, Pakistan', href: null },
         { icon: 'fas fa-clock', label: 'Response', value: 'Within 24 hours', href: null }
@@ -1313,7 +1343,7 @@ const RENDER = {
                         </div>
                         <div class="form-grp">
                             <label for="cEmail">Email <span>*</span></label>
-                            <input type="email" id="cEmail" name="email" placeholder="your@email.com" required autocomplete="email">
+                            <input type="email" id="cEmail" name="email" placeholder="my3154831409@gmail.com" required autocomplete="email">
                         </div>
                     </div>
                     <div class="form-grp">

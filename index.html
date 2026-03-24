@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Muhammad Yasir — Full Stack Developer from Islamabad. Portfolio showcasing projects, skills, experience, blog and services.">
-    <meta name="keywords" content="Muhammad Yasir, Full Stack Developer, React, JavaScript, Portfolio, Islamabad, Pakistan">
+    <meta name="description"
+        content="Muhammad Yasir — Full Stack Developer from Islamabad. Portfolio showcasing projects, skills, experience, blog and services.">
+    <meta name="keywords"
+        content="Muhammad Yasir, Full Stack Developer, React, JavaScript, Portfolio, Islamabad, Pakistan">
     <meta name="author" content="Muhammad Yasir">
     <meta property="og:title" content="Muhammad Yasir — Full Stack Developer">
     <meta property="og:description" content="Building modern web experiences with clean code and thoughtful design.">
     <meta property="og:type" content="website">
     <title>Muhammad Yasir — Full Stack Developer</title>
 
-       <!-- Favicon -->
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/icon.jpeg">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -25,18 +30,19 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- ===================== PAGE LOADER ===================== -->
     <div class="loader" id="loader">
         <div class="loader-content">
-            <span class="loader-logo">&lt;Yasir/&gt;</span>
+            <span class="loader-logo">&lt; Yasir /&gt;</span>
             <div class="loader-bar"></div>
         </div>
     </div>
 
     <!-- ===================== CUSTOM CURSOR ===================== -->
-    <div class="cursor-dot"     id="cursorDot"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
     <div class="cursor-outline" id="cursorOutline"></div>
 
     <!-- ===================== NAVIGATION ===================== -->
@@ -48,17 +54,17 @@
             </a>
 
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home"         class="nav-link active">Home</a></li>
-                <li><a href="#about"        class="nav-link">About</a></li>
-                <li><a href="#projects"     class="nav-link">Projects</a></li>
-                <li><a href="#skills"       class="nav-link">Skills</a></li>
-                <li><a href="#experience"   class="nav-link">Experience</a></li>
-                <li><a href="#education"    class="nav-link">Education</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#achievements" class="nav-link">Achievements</a></li>
-                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-                <li><a href="#services"     class="nav-link">Services</a></li>
-                <li><a href="#blog"         class="nav-link">Blog</a></li>
-                <li><a href="#contact"      class="nav-link">Contact</a></li>
+                 <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
 
             <div class="nav-right">
@@ -103,8 +109,9 @@
 
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">View Work <i class="fas fa-arrow-right"></i></a>
-                        <a href="#contact"  class="btn btn-outline">Hire Me</a>
-                        <a href="#"         class="btn btn-ghost" download>Download CV <i class="fas fa-download"></i></a>
+                        <a href="#contact" class="btn btn-outline">Hire Me</a>
+                        <a href="/assets/m-cv.pdf" class="btn btn-ghost" download>Download CV <i
+                                class="fas fa-download"></i></a>
                     </div>
 
                     <!-- Hero Social Links — filled by JS -->
@@ -117,7 +124,8 @@
                         <div class="hero-img-ring"></div>
                         <div class="hero-img-ring ring-2"></div>
                         <div class="hero-img-frame">
-                            <img src="/assets/my-pic.jpeg" alt="Muhammad Yasir — Full Stack Developer" class="hero-photo">
+                            <img src="/assets/my-pic.jpeg" alt="Muhammad Yasir — Full Stack Developer"
+                                class="hero-photo">
                         </div>
                         <!-- Floating Tech Cards — filled by JS -->
                         <div class="float-cards" id="floatCards"></div>
@@ -152,7 +160,8 @@
                 <span class="section-tag">My Work</span>
                 <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
                 <div class="section-line"></div>
-                <p class="section-subtitle">A showcase of 12 real projects demonstrating my skills and passion for quality.</p>
+                <p class="section-subtitle">A showcase of 12 real projects demonstrating my skills and passion for
+                    quality.</p>
             </div>
             <!-- Project Filters — filled by JS -->
             <div class="project-filters" id="projectFilters"></div>
@@ -227,8 +236,8 @@
                 <h2 class="section-title">Client <span class="accent">Testimonials</span></h2>
                 <div class="section-line"></div>
             </div>
-            <!-- Filled by JS — slider wrapper -->
-            <div class="testimonials-slider" id="testiWrap"></div>
+            <!-- Filled by JS -->
+            <div class="testimonials-grid" id="testiGrid"></div>
         </div>
     </section>
 
@@ -253,7 +262,8 @@
                 <span class="section-tag">Articles</span>
                 <h2 class="section-title">Blog & <span class="accent">Insights</span></h2>
                 <div class="section-line"></div>
-                <p class="section-subtitle">Real articles written by me — web development, design and career insights.</p>
+                <p class="section-subtitle">Real articles written by me — web development, design and career insights.
+                </p>
             </div>
             <!-- Filled by JS -->
             <div class="blog-grid" id="blogGrid"></div>
@@ -281,7 +291,7 @@
             <div class="footer-grid" id="footerGrid"></div>
             <div class="footer-bottom">
                 <p>&copy; <span id="currentYear"></span> Muhammad Yasir. All rights reserved.</p>
-                <p>Designed & developed with <span class="heart">❤️</span> by M.Yasir</p>
+                <p>Designed & developed with <span class="heart"></span> by M.Yasir</p>
             </div>
         </div>
     </footer>
@@ -299,8 +309,14 @@
         </div>
     </div>
 
+    <!-- ===================== WHATSAPP BUTTON ===================== -->
+    <a href="https://wa.me/923154831409" target="_blank" class="whatsapp-float" aria-label="Chat with me on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <!-- ===================== JAVASCRIPT ===================== -->
     <script src="script.js"></script>
 
 </body>
+
 </html>
