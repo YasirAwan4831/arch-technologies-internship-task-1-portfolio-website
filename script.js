@@ -59,7 +59,8 @@ const DATA = {
     floatCards: [
         { icon: 'fab fa-react', label: 'React', cls: 'fc1', color: '#61dafb' },
         { icon: 'fab fa-node-js', label: 'Node.js', cls: 'fc2', color: '#339933' },
-        { icon: 'fab fa-js', label: 'JavaScript', cls: 'fc3', color: '#f7df1e' }
+        { icon: 'fab fa-js', label: 'JavaScript', cls: 'fc3', color: '#f7df1e' },
+        { icon: 'fab fa-wordpress', label: 'WordPress', cls: 'fc4', color: '#21759b' }
     ],
 
     socials: [
@@ -280,7 +281,7 @@ const DATA = {
             category: 'frontend',
             year: '2025',
             description: 'A beautifully designed login & signup form with a dark futuristic UI, animated background, glassmorphism card and smooth transitions.',
-            image: '/assets/project/Login form.png',
+            image: '/assets/login-form.png',
             tools: ['HTML5', 'CSS3', 'JavaScript', 'Glassmorphism', 'Animations', 'Email Validation', 'Responsive Design', 'Git & GitHub'],
             role: 'Frontend Developer — UI/UX Design & Implementation',
             outcome: 'Production-ready auth UI with premium visual design',
@@ -508,7 +509,7 @@ experience: [
         name: 'Ahmed R.',
         role: 'Small Business Owner',
         initial: 'A',
-        avatar: null,
+        avatar: 'assets/reviews-10.jpg',
         stars: 5
     },
     {
@@ -516,7 +517,7 @@ experience: [
         name: 'Hassan M.',
         role: 'Job Seeker',
         initial: 'H',
-        avatar: null,
+        avatar: '/assets/reviews-3.jpg',
         stars: 4.5
     },
     {
@@ -524,7 +525,7 @@ experience: [
         name: 'Usman K.',
         role: 'Student',
         initial: 'U',
-        avatar: null,
+        avatar: '/assets/reviews-1.jpg',
         stars: 5
     },
     {
@@ -532,7 +533,7 @@ experience: [
         name: 'Mehwish Fatima',
         role: 'Co Founder DigiTech Solutions',
         initial: 'M',
-        avatar: null,
+        avatar: '/assets/reviews-4.jpg',
         stars: 4.5
     }
 ],
@@ -1026,18 +1027,16 @@ const RENDER = {
     },
 
     projectFilters() {
+        /* Filters hidden as per user request — category tags on cards remain */
         const el = document.getElementById('projectFilters');
-        if (!el) return;
-        el.innerHTML = DATA.projectFilters.map((f, i) => `
-            <button class="f-btn${i === 0 ? ' active' : ''}" data-filter="${f.key}">${f.label}</button>
-        `).join('');
+        if (el) el.style.display = 'none';
     },
 
     projects() {
         const el = document.getElementById('projectsGrid');
         if (!el) return;
         el.innerHTML = DATA.projects.map((p, i) => `
-            <article class="proj-card${i >= 6 ? ' hidden' : ''}" data-category="${p.category}" data-aos="fade-up">
+            <article class="proj-card${i >= 4 ? ' hidden' : ''}" data-category="${p.category}" data-aos="fade-up">
                 <div class="proj-img">
                     <img src="${p.image}" alt="${p.title}" loading="lazy">
                     <div class="proj-overlay">
@@ -1246,8 +1245,8 @@ const RENDER = {
     blog() {
         const el = document.getElementById('blogGrid');
         if (!el) return;
-        el.innerHTML = DATA.blogPosts.map(post => `
-            <article class="blog-card" data-post-id="${post.id}" data-aos="fade-up" tabindex="0" role="button" aria-label="Read: ${post.title}">
+        el.innerHTML = DATA.blogPosts.map((post, i) => `
+            <article class="blog-card${i >= 3 ? ' hidden' : ''}" data-post-id="${post.id}" data-aos="fade-up" tabindex="0" role="button" aria-label="Read: ${post.title}">
                 <div class="blog-img">
                     <img src="${post.image}" alt="${post.title}" loading="lazy">
                     <span class="blog-cat">${post.category}</span>
@@ -1343,7 +1342,7 @@ const RENDER = {
                         </div>
                         <div class="form-grp">
                             <label for="cEmail">Email <span>*</span></label>
-                            <input type="email" id="cEmail" name="email" placeholder="my3154831409@gmail.com" required autocomplete="email">
+                            <input type="email" id="cEmail" name="email" placeholder="Enter Your Email" required autocomplete="email">
                         </div>
                     </div>
                     <div class="form-grp">
@@ -1442,37 +1441,60 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* ── CUSTOM CURSOR ───────────────────────────────────────────── */
 (function initCursor() {
-    const dot = document.getElementById('cursorDot');
+    const dot     = document.getElementById('cursorDot');
     const outline = document.getElementById('cursorOutline');
+    const glow    = document.getElementById('cursorGlow');
     if (!dot || !outline || window.innerWidth <= 1024) return;
 
-    let mx = 0, my = 0, ox = 0, oy = 0;
+    let mx = 0, my = 0;
+    let ox = 0, oy = 0;   /* outline lag */
+    let gx = 0, gy = 0;   /* glow lag (slower) */
 
+    /* Instant dot follows mouse directly */
     window.addEventListener('mousemove', (e) => {
         mx = e.clientX;
         my = e.clientY;
         dot.style.left = mx + 'px';
-        dot.style.top = my + 'px';
+        dot.style.top  = my + 'px';
     });
 
+    /* Animate outline & glow with smooth lag */
     const animate = () => {
+        /* outline — moderate lag */
         ox += (mx - ox) * 0.15;
         oy += (my - oy) * 0.15;
         outline.style.left = ox + 'px';
-        outline.style.top = oy + 'px';
+        outline.style.top  = oy + 'px';
+
+        /* glow aura — slower, dreamy lag */
+        gx += (mx - gx) * 0.06;
+        gy += (my - gy) * 0.06;
+        if (glow) {
+            glow.style.left = gx + 'px';
+            glow.style.top  = gy + 'px';
+        }
+
         requestAnimationFrame(animate);
     };
     animate();
 
-    document.querySelectorAll('a, button, .proj-card, .blog-card, .plan-card, .s-item').forEach(el => {
-        el.addEventListener('mouseenter', () => {
-            dot.style.transform = 'translate(-50%,-50%) scale(2)';
-            outline.style.transform = 'translate(-50%,-50%) scale(1.5)';
-        });
-        el.addEventListener('mouseleave', () => {
-            dot.style.transform = 'translate(-50%,-50%) scale(1)';
-            outline.style.transform = 'translate(-50%,-50%) scale(1)';
-        });
+    /* Hover on interactive elements — body class drives CSS */
+    const hoverSelectors = 'a, button, .proj-card, .blog-card, .plan-card, .s-item, .testi-card, .nav-link, input, textarea, select, .f-btn';
+    document.querySelectorAll(hoverSelectors).forEach(el => {
+        el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+        el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+    });
+
+    /* Hide custom cursor when leaving window */
+    document.addEventListener('mouseleave', () => {
+        dot.style.opacity = '0';
+        if (outline) outline.style.opacity = '0';
+        if (glow) glow.style.opacity = '0';
+    });
+    document.addEventListener('mouseenter', () => {
+        dot.style.opacity = '1';
+        if (outline) outline.style.opacity = '';
+        if (glow) glow.style.opacity = '';
     });
 })();
 
@@ -1632,7 +1654,7 @@ function initProjects() {
     const grid = document.getElementById('projectsGrid');
     const filtersEl = document.getElementById('projectFilters');
     const loadBtn = document.getElementById('loadMoreBtn');
-    let showing = 6;
+    let showing = 4;
 
     filtersEl?.addEventListener('click', (e) => {
         const btn = e.target.closest('.f-btn');
@@ -1649,7 +1671,7 @@ function initProjects() {
     loadBtn?.addEventListener('click', () => {
         let shown = 0;
         grid?.querySelectorAll('.proj-card.hidden').forEach(card => {
-            if (shown < 3) { card.classList.remove('hidden'); shown++; showing++; }
+            if (shown < 4) { card.classList.remove('hidden'); shown++; showing++; }
         });
         if (showing >= DATA.projects.length) loadBtn.style.display = 'none';
     });
@@ -1659,6 +1681,29 @@ function initProjects() {
 /* ── TESTIMONIALS SLIDER ─────────────────────────────────────── */
 /* ── TESTIMONIALS (NOW A GRID) ─────────────────────────────── */
 // Slider logic removed as requested.
+
+
+/* ── BLOG LOAD MORE ──────────────────────────────────────────── */
+function initBlog() {
+    const blogGrid = document.getElementById('blogGrid');
+    const loadMoreBlogBtn = document.getElementById('loadMoreBlogBtn');
+    if (!loadMoreBlogBtn || !blogGrid) return;
+
+    let blogShowing = 3;
+
+    /* Hide button if all blogs already visible */
+    if (DATA.blogPosts.length <= blogShowing) {
+        loadMoreBlogBtn.style.display = 'none';
+    }
+
+    loadMoreBlogBtn.addEventListener('click', () => {
+        let shown = 0;
+        blogGrid.querySelectorAll('.blog-card.hidden').forEach(card => {
+            if (shown < 3) { card.classList.remove('hidden'); shown++; blogShowing++; }
+        });
+        if (blogShowing >= DATA.blogPosts.length) loadMoreBlogBtn.style.display = 'none';
+    });
+}
 
 
 /* ── BLOG MODAL ──────────────────────────────────────────────── */
@@ -1710,7 +1755,7 @@ function initBlogModal() {
 }
 
 
-/* ── CONTACT FORM ────────────────────────────────────────────── */
+/* ── CONTACT FORM (Private-SECTIONS) ──────────────────────────────── */
 function initContactForm() {
     const form = document.getElementById('contactForm');
     const status = document.getElementById('formStatus');
@@ -1719,10 +1764,14 @@ function initContactForm() {
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
-        const name = form.querySelector('#cName')?.value.trim();
-        const email = form.querySelector('#cEmail')?.value.trim();
+
+        const name    = form.querySelector('#cName')?.value.trim();
+        const email   = form.querySelector('#cEmail')?.value.trim();
+        const subject = form.querySelector('#cSubject')?.value.trim() || '(No subject)';
+        const service = form.querySelector('#cService')?.value || '';
         const message = form.querySelector('#cMsg')?.value.trim();
 
+        /* Basic validation */
         if (!name || !email || !message) {
             showStatus('error', '⚠ Please fill in all required fields.');
             return;
@@ -1732,16 +1781,44 @@ function initContactForm() {
             return;
         }
 
+        /* Loading state */
         btn.disabled = true;
         btn.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i> Sending…';
+        hideStatus();
 
-        await new Promise(r => setTimeout(r, 1500));
+        /* Send via EmailJS */
+        try {
+            await emailjs.send(
+    
+                
+                {
 
-        btn.disabled = false;
-        btn.innerHTML = '<span>Send Message</span><i class="fas fa-paper-plane"></i>';
-        form.reset();
-        showStatus('success', '✓ Message sent! I\'ll reply within 24 hours. Thank you!');
-        setTimeout(() => { if (status) status.style.display = 'none'; }, 5000);
+           // Private section
+          // Placeholder for restricted code
+         // Will be updated later
+                }
+                
+                // Private section
+
+                // Private section
+
+                // Private section
+
+                
+
+            );
+
+            /* Success */
+            form.reset();
+            
+
+        } catch (err) {
+            console.error( Private-SECTIONS-Private-SECTIONS-Private-SECTIONSPrivate-SECTIONS-Private-SECTIONS);
+            showStatus('error', 'Private-SECTIONSPrivate-SECTIONSPrivate-SECTIONSPrivate-SECTIONS.');
+        }  {
+            btn.disabled = false;
+            btn.innerHTML = '<span>Send Message</span><i class="fas fa-paper-plane"></i>';
+        }
     });
 
     function showStatus(cls, msg) {
@@ -1749,6 +1826,10 @@ function initContactForm() {
         status.className = `form-status ${cls}`;
         status.textContent = msg;
         status.style.display = 'block';
+    }
+
+    function hideStatus() {
+        if (status) status.style.display = 'none';
     }
 }
 
@@ -1759,7 +1840,7 @@ function initContactForm() {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    /* 1. سب سے پہلے سارا data render کریں */
+/* 1. First render all the data */ 
     RENDER.heroStats();
     RENDER.heroSocials();
     RENDER.floatCards();
@@ -1770,20 +1851,21 @@ document.addEventListener('DOMContentLoaded', () => {
     RENDER.experience();
     RENDER.education();
     RENDER.achievements();
-    RENDER.testimonials(); /* ← پہلے HTML render */
+    RENDER.testimonials(); /* ← before HTML render */
     RENDER.blog();
     RENDER.services();
     RENDER.contact();
     RENDER.footer();
 
-    /* 2. پھر سارے features initialize کریں */
-    /* Removed Testimonial Slider  */
+   /* 2. Then initialize all features */
+/* Removed Testimonial Slider */
     initProjects();
+    initBlog();
     initBlogModal();
     initContactForm();
     initCounters();
 
-    /* 3. AOS animations — تھوڑی دیر بعد تاکہ DOM مکمل بن جائے */
+    /* 3. AOS animations — after a while so that the DOM becomes complete */
     setTimeout(initAOS, 100);
 
     console.log('%c✦ Muhammad Yasir — Portfolio ✦', 'color:#00e5a0;font-size:14px;font-weight:bold');
