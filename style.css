@@ -303,6 +303,13 @@ h6 {
 }
 
 /* ==================== CURSOR ==================== */
+
+/* Hide system cursor on desktop */
+@media (min-width: 1024px) {
+    body, a, button, [role="button"] { cursor: none !important; }
+}
+
+/* ── Core dot ─────────────────────────────────── */
 .cursor-dot {
     width: 8px;
     height: 8px;
@@ -312,31 +319,78 @@ h6 {
     pointer-events: none;
     z-index: 9999;
     transform: translate(-50%, -50%);
-    transition: transform 0.15s;
+    transition: transform 0.12s var(--ease), width 0.25s var(--ease), height 0.25s var(--ease), background 0.25s;
     display: none;
+    box-shadow:
+        0 0 6px  rgba(0, 229, 160, 0.9),
+        0 0 14px rgba(0, 229, 160, 0.5);
 }
 
+/* ── Spinning dashed ring ─────────────────────── */
 .cursor-outline {
-    width: 32px;
-    height: 32px;
-    border: 2px solid var(--primary);
+    width: 36px;
+    height: 36px;
+    border: 2px dashed rgba(0, 229, 160, 0.55);
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
     z-index: 9998;
     transform: translate(-50%, -50%);
-    transition: all 0.15s var(--ease);
-    opacity: 0.5;
+    transition: width 0.3s var(--spring), height 0.3s var(--spring), border-color 0.3s, opacity 0.3s;
+    opacity: 0.75;
+    display: none;
+    animation: cursorSpin 5s linear infinite;
+}
+
+@keyframes cursorSpin {
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* ── Soft outer aura / glow ────────────────────── */
+.cursor-glow {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 229, 160, 0.07) 0%, transparent 65%);
+    position: fixed;
+    pointer-events: none;
+    z-index: 9997;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s var(--ease), height 0.4s var(--ease), opacity 0.3s;
     display: none;
 }
 
 @media (min-width: 1024px) {
-
     .cursor-dot,
-    .cursor-outline {
+    .cursor-outline,
+    .cursor-glow {
         display: block;
     }
 }
+
+/* ── Hover state (on interactive elements) ────── */
+body.cursor-hover .cursor-dot {
+    width: 14px;
+    height: 14px;
+    background: var(--accent);
+    box-shadow:
+        0 0 10px rgba(139, 92, 246, 0.9),
+        0 0 28px rgba(139, 92, 246, 0.5);
+}
+
+body.cursor-hover .cursor-outline {
+    width: 56px;
+    height: 56px;
+    border-color: rgba(139, 92, 246, 0.55);
+    opacity: 0.6;
+}
+
+body.cursor-hover .cursor-glow {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 65%);
+}
+
 
 /* ==================== NAVBAR ==================== */
 .navbar {
@@ -778,6 +832,12 @@ body.light-theme .navbar.scrolled {
     bottom: 18px;
     left: -20px;
     animation-delay: 0.5s;
+}
+
+.fc4 {
+    top: 28px;
+    left: -30px;
+    animation-delay: 1.5s;
 }
 
 @keyframes floatY {
@@ -2282,9 +2342,71 @@ body.light-theme .navbar.scrolled {
     gap: 11px;
 }
 
+/* Hidden cards (projects + blog) */
+.proj-card.hidden,
+.blog-card.hidden {
+    display: none;
+}
+
+/* Load More button wrapper */
+.load-more-wrap {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.load-more-btn {
+    padding: 13px 34px;
+    font-size: 0.9rem;
+    border-radius: var(--r-full);
+    border-width: 2px;
+    transition: all 0.3s var(--ease);
+}
+
+.load-more-btn:hover {
+    background: var(--primary-glow);
+    border-color: var(--primary);
+    color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px var(--primary-glow);
+}
+
 /* ==================== CONTACT ==================== */
 .contact {
     background: var(--bg-1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative glow blobs behind the section */
+.contact::before,
+.contact::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(96px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.contact::before {
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(circle, rgba(0, 229, 160, 0.08) 0%, transparent 70%);
+    top: -100px;
+    right: -100px;
+}
+
+.contact::after {
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.07) 0%, transparent 70%);
+    bottom: 0;
+    left: 0;
+}
+
+.contact .container {
+    position: relative;
+    z-index: 1;
 }
 
 .contact-grid {
@@ -2517,6 +2639,25 @@ a.c-detail {
     transition: all 0.3s var(--ease);
     box-shadow: 0 6px 24px var(--primary-glow);
     margin-top: 6px;
+    overflow: hidden;       /* for shimmer clip */
+    position: relative;
+}
+
+/* Shimmer sweep on hover */
+.form-submit::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+    transform: skewX(-20deg);
+    transition: left 0.55s var(--ease);
+}
+
+.form-submit:hover::after {
+    left: 160%;
 }
 
 .form-submit:hover {
@@ -2545,6 +2686,7 @@ a.c-detail {
     background: rgba(0, 229, 160, 0.1);
     border: 1px solid rgba(0, 229, 160, 0.28);
     color: var(--primary);
+    animation: statusSlideIn 0.35s var(--ease) both;
 }
 
 .form-status.error {
@@ -2552,6 +2694,12 @@ a.c-detail {
     background: rgba(255, 80, 80, 0.1);
     border: 1px solid rgba(255, 80, 80, 0.28);
     color: #ff5050;
+    animation: statusSlideIn 0.35s var(--ease) both;
+}
+
+@keyframes statusSlideIn {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
 }
 
 /* ==================== FOOTER ==================== */
@@ -2559,6 +2707,19 @@ a.c-detail {
     background: var(--bg-base);
     border-top: 1px solid var(--border);
     padding: 64px 0 0;
+    position: relative;
+}
+
+/* Subtle top glow line */
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--primary), var(--accent), transparent);
+    opacity: 0.6;
 }
 
 .footer-grid {
@@ -2636,7 +2797,7 @@ a.c-detail {
 .footer-col a {
     font-size: 0.84rem;
     color: var(--text-3);
-    transition: color 0.2s var(--ease);
+    transition: color 0.2s var(--ease), transform 0.2s var(--ease), padding-left 0.2s var(--ease);
     display: inline-flex;
     align-items: center;
     gap: 5px;
@@ -2644,17 +2805,20 @@ a.c-detail {
 
 .footer-col a:hover {
     color: var(--primary);
+    padding-left: 6px;
 }
 
 .footer-col a::before {
     content: '›';
     color: var(--primary);
     opacity: 0;
-    transition: opacity 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+    transform: translateX(-4px);
 }
 
 .footer-col a:hover::before {
     opacity: 1;
+    transform: translateX(0);
 }
 
 .f-contact-item {
@@ -2919,6 +3083,38 @@ a.c-detail {
     font-family: monospace;
     font-size: 0.9em;
     color: var(--primary);
+}
+
+/* ── Read Full Blog link — pill CTA ──────────────── */
+.modal-post-body a {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 8px;
+    padding: 9px 22px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: var(--text-inv);
+    font-weight: 700;
+    font-size: 0.88rem;
+    font-family: 'Outfit', sans-serif;
+    border-radius: var(--r-full);
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    box-shadow: 0 4px 18px var(--primary-glow);
+    transition: all 0.28s var(--ease);
+    position: relative;
+    overflow: hidden;
+}
+
+.modal-post-body a::before {
+    content: '\21D7';   /* ⇗ external link arrow */
+    font-size: 1rem;
+}
+
+.modal-post-body a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(0, 229, 160, 0.45);
+    color: var(--text-inv);
 }
 
 /* ==================== AOS ANIMATIONS ==================== */
@@ -3209,8 +3405,8 @@ a.c-detail {
 /* ==================== WHATSAPP FLOAT ==================== */
 .whatsapp-float {
     position: fixed;
-    bottom: 30px;
-    right: 90px;
+    bottom: 90px;
+    right: 24px;
     width: 56px;
     height: 56px;
     background-color: #25d366;
@@ -3220,7 +3416,7 @@ a.c-detail {
     justify-content: center;
     align-items: center;
     font-size: 28px;
-    box-shadow: 0 4px 24px hwb(63 16% 3% / 0.4);
+    box-shadow: 0 4px 24px rgba(37, 211, 102, 0.4);
     z-index: 1000;
     transition: all 0.3s var(--ease);
     text-decoration: none;
