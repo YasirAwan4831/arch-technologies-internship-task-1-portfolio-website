@@ -34,19 +34,9 @@
 
 ## ✅ Key Objectives Achieved
 
-<p align="center">
-  <img src="https://progress-bar.dev/100/?title=HTML%20Structure&width=250&color=00e5a0" />
-  <img src="https://progress-bar.dev/100/?title=CSS%20Styling&width=250&color=4d9fff" />
-  <img src="https://progress-bar.dev/100/?title=JavaScript%20Functionality&width=250&color=f7df1e" />
-  <br><br>
-  <img src="https://progress-bar.dev/100/?title=Responsive%20Design&width=250&color=ff6b6b" />
-  <img src="https://progress-bar.dev/100/?title=Dark%2FLight%20Theme&width=250&color=61dafb" />
-  <img src="https://progress-bar.dev/100/?title=Blog%20Modal%20System&width=250&color=a55eea" />
-</p>
+<p align="center"> <img src="https://img.shields.io/badge/HTML%20Structure-100%25-00e5a0?style=for-the-badge" /> <img src="https://img.shields.io/badge/CSS%20Styling-100%25-4d9fff?style=for-the-badge" /> <img src="https://img.shields.io/badge/JavaScript%20Functionality-100%25-f7df1e?style=for-the-badge" /> <br><br> <img src="https://img.shields.io/badge/Responsive%20Design-100%25-ff6b6b?style=for-the-badge" /> <img src="https://img.shields.io/badge/Dark%2FLight%20Theme-100%25-61dafb?style=for-the-badge" /> <img src="https://img.shields.io/badge/Blog%20Modal%20System-100%25-a55eea?style=for-the-badge" /> </p>
+<p align="center"> <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%" /> </p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%" />
-</p>
 
 ## ✨ KEY FEATURES
 
