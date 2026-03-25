@@ -44,6 +44,7 @@
     <!-- ===================== CUSTOM CURSOR ===================== -->
     <div class="cursor-dot" id="cursorDot"></div>
     <div class="cursor-outline" id="cursorOutline"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
 
     <!-- ===================== NAVIGATION ===================== -->
     <nav class="navbar" id="navbar">
@@ -267,6 +268,11 @@
             </div>
             <!-- Filled by JS -->
             <div class="blog-grid" id="blogGrid"></div>
+            <div class="load-more-wrap">
+                <button id="loadMoreBlogBtn" class="btn btn-outline load-more-btn">
+                    <i class="fas fa-plus"></i> Load More Articles
+                </button>
+            </div>
         </div>
     </section>
 
@@ -313,6 +319,12 @@
     <a href="https://wa.me/923154831409" target="_blank" class="whatsapp-float" aria-label="Chat with me on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
+
+    <!-- ===================== EMAILJS ===================== -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init("JE2aT-H2O8d8g4Cc7");
+    </script>
 
     <!-- ===================== JAVASCRIPT ===================== -->
     <script src="script.js"></script>
