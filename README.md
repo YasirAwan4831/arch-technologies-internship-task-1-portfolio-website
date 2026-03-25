@@ -242,7 +242,7 @@ open index.html
 <div align="center"> Device | Breakpoint | Optimization --- | --- | --- 🖥️ Desktop | > 1024px | Full layout, custom cursor, hover effects 💻 Laptop | 1024px | Grid adjustments, reduced spacing 📱 Tablet | 768px - 1024px | Hamburger menu, single column sections 📱 Mobile | < 768px | Stacked layout, touch-friendly buttons 📱 Small Mobile | < 480px | Compact cards, simplified stats </div>
 ```
 
-📊 Responsive Features
+**📊 Responsive Features**
 
 <p align="center">
   <img src="https://img.shields.io/badge/Fluid_Typography-✓-00e5a0?style=for-the-badge" />
@@ -259,10 +259,19 @@ open index.html
 <!-- WAVE DIVIDER -->
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%" />
 
-🎨 COLOR SCHEME & TYPOGRAPHY
-🌈 Color Palette
-<p align="center"> <img src="https://via.placeholder.com/100x100/00e5a0/000000?text=Primary" width="80" height="80" /> <img src="https://via.placeholder.com/100x100/4d9fff/000000?text=Accent" width="80" height="80" /> <img src="https://via.placeholder.com/100x100/0d1117/ffffff?text=Dark+BG" width="80" height="80" /> <img src="https://via.placeholder.com/100x100/f0f4f8/000000?text=Light+Text" width="80" height="80" /> <img src="https://via.placeholder.com/100x100/a0aec0/000000?text=Secondary" width="80" height="80" /> <img src="https://via.placeholder.com/100x100/64748b/ffffff?text=Muted" width="80" height="80" /> </p>
+#### 🎨 COLOR SCHEME & TYPOGRAPHY
 
+**🌈 Color Palette**
+<p align="center">
+<img src="https://img.shields.io/badge/Primary-00e5a0?style=for-the-badge&logo=appveyor" />
+<img src="https://img.shields.io/badge/Accent-4d9fff?style=for-the-badge&logo=appveyor" />
+<img src="https://img.shields.io/badge/Dark_BG-0d1117?style=for-the-badge&logo=appveyor&logoColor=white" />
+<img src="https://img.shields.io/badge/Light_Text-f0f4f8?style=for-the-badge&logo=appveyor" />
+<img src="https://img.shields.io/badge/Secondary-a0aec0?style=for-the-badge&logo=appveyor" />
+<img src="https://img.shields.io/badge/Muted-64748b?style=for-the-badge&logo=appveyor&logoColor=white" />
+</p>
+
+```
 :root {
     --primary: #00e5a0;      /* Vibrant green - success, energy */
     --accent: #4d9fff;       /* Bright blue - trust, professionalism */
@@ -271,6 +280,7 @@ open index.html
     --text-2: #a0aec0;       /* Medium gray - secondary text */
     --text-3: #64748b;       /* Dark gray - muted elements */
 }
+```
 
 ## 🔤 Typography
 ```
