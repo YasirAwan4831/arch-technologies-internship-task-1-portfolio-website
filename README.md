@@ -34,7 +34,7 @@
 
 ## ✅ Key Objectives Achieved
 
-<p align="center"> <img src="https://img.shields.io/badge/HTML%20Structure-100%25-00e5a0?style=for-the-badge" /> <img src="https://img.shields.io/badge/CSS%20Styling-100%25-4d9fff?style=for-the-badge" /> <img src="https://img.shields.io/badge/JavaScript%20Functionality-100%25-f7df1e?style=for-the-badge" /> <br><br> <img src="https://img.shields.io/badge/Responsive%20Design-100%25-ff6b6b?style=for-the-badge" /> <img src="https://img.shields.io/badge/Dark%2FLight%20Theme-100%25-61dafb?style=for-the-badge" /> <img src="https://img.shields.io/badge/Blog%20Modal%20System-100%25-a55eea?style=for-the-badge" /> </p>
+<p align="center"> <img src="https://img.shields.io/badge/HTML%20Structure-99%25-00e5a0?style=for-the-badge" /> <img src="https://img.shields.io/badge/CSS%20Styling-98%25-4d9fff?style=for-the-badge" /> <img src="https://img.shields.io/badge/JavaScript%20Functionality-100%25-f7df1e?style=for-the-badge" /> <br><br> <img src="https://img.shields.io/badge/Responsive%20Design-96%25-ff6b6b?style=for-the-badge" /> <img src="https://img.shields.io/badge/Dark%2FLight%20Theme-100%25-61dafb?style=for-the-badge" /> <img src="https://img.shields.io/badge/Blog%20Modal%20System-100%25-a55eea?style=for-the-badge" /> </p>
 <p align="center"> <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%" /> </p>
 
 
@@ -130,7 +130,7 @@
 
 ## 🛠️ TECHNOLOGY STACK
 
-<div align="center">🎨 Frontend</div>
+### Frontend
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
@@ -140,7 +140,7 @@
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
 </p>
 
-<div align="center">⚙️ Backend & Tools</div>
+### Backend & Tools
 <p align="center">
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
@@ -150,7 +150,7 @@
   <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
 </p>
 
-<div align="center">🎪 Libraries & Frameworks</div>
+### Libraries & Frameworks
 <p align="center">
   <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white" />
   <img src="https://img.shields.io/badge/Font_Awesome-528DD7?style=for-the-badge&logo=font-awesome&logoColor=white" />
@@ -158,7 +158,7 @@
   <img src="https://img.shields.io/badge/EmailJS-FF6B6B?style=for-the-badge&logo=gmail&logoColor=white" />
 </p>
 
-<div align="center">🎨 Design Tools</div>
+### Design Tools
 <p align="center">
   <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
   <img src="https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white" />
@@ -193,16 +193,16 @@
 ## 📊 File Statistics
 <p align="center">
   <img src="https://img.shields.io/badge/HTML-327_lines-00e5a0?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/CSS-3872_lines-4d9fff?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/CSS-872_lines-4d9fff?style=for-the-badge" />
   <img src="https://img.shields.io/badge/JavaScript-2911_lines-f7df1e?style=for-the-badge" />
 </p>
 
 <!-- WAVE DIVIDER -->
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%" />
 
-## 🚀 LIVE DEMO
+##  LIVE DEMO   
 <div align="center">
-  <a href="https://your-live-demo-link.com">
+  <a href="">
     <img src="https://img.shields.io/badge/%F0%9F%8C%90_VIEW_LIVE_DEMO-00e5a0?style=for-the-badge&logo=vercel&logoColor=black&labelColor=black" alt="View Live Demo" />
   </a>
 </div>
@@ -210,17 +210,6 @@
 <!-- WAVE DIVIDER -->
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%" />
 
-## 📸 Screenshots
-<p align="center">
-  <img src="https://via.placeholder.com/400x250/0d1117/00e5a0?text=Hero+Section" width="30%" />
-  <img src="https://via.placeholder.com/400x250/0d1117/4d9fff?text=Projects+Grid" width="30%" />
-  <img src="https://via.placeholder.com/400x250/0d1117/f7df1e?text=Blog+Modal" width="30%" />
-</p>
-<p align="center">
-  <img src="https://via.placeholder.com/400x250/0d1117/61dafb?text=Skills+Section" width="30%" />
-  <img src="https://via.placeholder.com/400x250/0d1117/a55eea?text=Services+Pricing" width="30%" />
-  <img src="https://via.placeholder.com/400x250/0d1117/ff6b6b?text=Contact+Form" width="30%" />
-</p>
 
 <!-- WAVE DIVIDER -->
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%" />
@@ -248,13 +237,27 @@ open index.html
 🔧 Customization Guide
 <details> <summary><b>📝 How to Update Personal Information</b></summary> <br/> Open `script.js` and find the `DATA` object at the top: ```javascript const DATA = { personal: { name: 'Muhammad Yasir', // Change your name role: 'Full Stack Developer', // Change your role email: 'my4831@gmail.com',// Change your email location: 'Islamabad, Pakistan', // Change your location // ... more fields }, // ... }; ``` </details> <details> <summary><b>🖼️ How to Add Your Own Images</b></summary> <br/> 1. Place your images in the `assets/images/` folder 2. Update image paths in `DATA.projects` array: ```javascript { title: 'Your Project', image: './assets/images/your-image.jpg', // Update this path // ... } ``` </details> <details> <summary><b>🎨 How to Change Colors</b></summary> <br/> Open `style.css` and modify CSS variables at the top: ```css :root { --primary: #00e5a0; /* Main green color */ --primary-dark: #00b87a; /* Darker green */ --accent: #4d9fff; /* Blue accent */ /* ... more colors */ } ``` </details> <!-- WAVE DIVIDER --> <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%" />
 
-📱 RESPONSIVE DESIGN
+**📱 RESPONSIVE DESIGN**
 ```
 <div align="center"> Device | Breakpoint | Optimization --- | --- | --- 🖥️ Desktop | > 1024px | Full layout, custom cursor, hover effects 💻 Laptop | 1024px | Grid adjustments, reduced spacing 📱 Tablet | 768px - 1024px | Hamburger menu, single column sections 📱 Mobile | < 768px | Stacked layout, touch-friendly buttons 📱 Small Mobile | < 480px | Compact cards, simplified stats </div>
 ```
 
 📊 Responsive Features
-<p align="center"> <img src="https://img.shields.io/badge/Fluid_Typography-✓-00e5a0?style=flat-square" /> <img src="https://img.shields.io/badge/Flexible_Grids-✓-4d9fff?style=flat-square" /> <img src="https://img.shields.io/badge/Hamburger_Menu-✓-f7df1e?style=flat-square" /> <img src="https://img.shields.io/badge/Touch_Optimized-✓-61dafb?style=flat-square" /> <br/> <img src="https://img.shields.io/badge/Viewport_Meta-✓-a55eea?style=flat-square" /> <img src="https://img.shields.io/badge/Media_Queries-✓-ff6b6b?style=flat-square" /> <img src="https://img.shields.io/badge/Mobile_First-✓-88CE02?style=flat-square" /> <img src="https://img.shields.io/badge/Retina_Ready-✓-FFA500?style=flat-square" /> </p> <!-- WAVE DIVIDER --> <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%" />
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Fluid_Typography-✓-00e5a0?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Flexible_Grids-✓-4d9fff?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Hamburger_Menu-✓-f7df1e?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Touch_Optimized-✓-61dafb?style=for-the-badge" />
+  <br/>
+  <img src="https://img.shields.io/badge/Viewport_Meta-✓-a55eea?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Media_Queries-✓-ff6b6b?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Mobile_First-✓-88CE02?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Retina_Ready-✓-FFA500?style=for-the-badge" />
+</p>
+
+<!-- WAVE DIVIDER -->
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%" />
 
 🎨 COLOR SCHEME & TYPOGRAPHY
 🌈 Color Palette
