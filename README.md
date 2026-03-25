@@ -259,7 +259,7 @@ open index.html
 <!-- WAVE DIVIDER -->
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%" />
 
-#### 🎨 COLOR SCHEME & TYPOGRAPHY
+### 🎨 COLOR SCHEME & TYPOGRAPHY
 
 **🌈 Color Palette**
 <p align="center">
@@ -295,10 +295,11 @@ open index.html
 ## 📊 PERFORMANCE METRICS
 
 <div align="center">
-<img src="https://img.shields.io/badge/PageSpeed-98%25-00e5a0?style=for-the-badge&logo=google-pagespeed" />
+<img src="https://img.shields.io/badge/PageSpeed-92%25-00e5a0?style=for-the-badge&logo=google-pagespeed" />
 <img src="https://img.shields.io/badge/Lighthouse-100%25-4d9fff?style=for-the-badge&logo=lighthouse" />
 <img src="https://img.shields.io/badge/W3C-Validated-f7df1e?style=for-the-badge&logo=w3c" />
 </div>
+
 
 <p align="center">
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YasirAwan4831&layout=compact&theme=dark&bg_color=0d1117&hide_border=true&title_color=00e5a0&text_color=f0f4f8" width="45%" />
@@ -366,11 +367,11 @@ The blog section features **6 full-length articles** with rich formatting and mo
 
 | Article Title | Category | Read Time |
 |---------------|---------|-----------|
-| Building a Modern Portfolio with React & TypeScript | Web Dev | 8 min |
-| How I Landed 3 Internships in One Year | Career | 7 min |
-| Top 10 UI/UX Principles Every Developer Must Know | Design | 6 min |
+| Building a Modern Portfolio with React & TypeScript | Web Dev | 5 min |
+| How I Landed 3 Internships in One Year | Career | 4 min |
+| Top 10 UI/UX Principles Every Developer Must Know | Design | 4 min |
 | JavaScript vs TypeScript: Which First? | Web Dev | 5 min |
-| WordPress vs Custom Code: When to Use Each | Web Dev | 6 min |
+| WordPress vs Custom Code: When to Use Each | Web Dev | 4 min |
 | Git & GitHub for Beginners | Tools | 5 min |
 
 </div>
@@ -524,7 +525,7 @@ Alt text for all images
 
 ## 👨‍💻 AUTHOR INFORMATION
 <div align="center">
-  <img src="https://via.placeholder.com/150x150/0d1117/00e5a0?text=Yasir" width="150" style="border-radius:50%" />
+  <img src="https://avatars.githubusercontent.com/u/223332147?v=4" width="150" style="border-radius:50%" />
   
   **Muhammad Yasir**  
   Full Stack Developer | Islamabad, Pakistan
@@ -534,7 +535,7 @@ Alt text for all images
   <img src="https://img.shields.io/badge/Email-myasirtech4831%2540gmail.com-00e5a0?style=for-the-badge&logo=gmail&logoColor=white&labelColor=black" />
   <img src="https://img.shields.io/badge/LinkedIn-yasirawan4831-4d9fff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=black" />
   <img src="https://img.shields.io/badge/GitHub-YasirAwan4831-f7df1e?style=for-the-badge&logo=github&logoColor=white&labelColor=black" />
-  <img src="https://img.shields.io/badge/Portfolio-muhammadyaser--portfolio.netlify.app-61dafb?style=for-the-badge&logo=vercel&logoColor=white&labelColor=black" />
+  <img src="https://img.shields.io/badge/Portfolio-muhammadyaser--portfolio.vercel.app-61dafb?style=for-the-badge&logo=vercel&logoColor=white&labelColor=black" />
 </div>
 
 <!-- WAVE DIVIDER -->
