@@ -37,6 +37,46 @@
 <p align="center"> <img src="https://img.shields.io/badge/HTML%20Structure-99%25-00e5a0?style=for-the-badge" /> <img src="https://img.shields.io/badge/CSS%20Styling-98%25-4d9fff?style=for-the-badge" /> <img src="https://img.shields.io/badge/JavaScript%20Functionality-100%25-f7df1e?style=for-the-badge" /> <br><br> <img src="https://img.shields.io/badge/Responsive%20Design-96%25-ff6b6b?style=for-the-badge" /> <img src="https://img.shields.io/badge/Dark%2FLight%20Theme-100%25-61dafb?style=for-the-badge" /> <img src="https://img.shields.io/badge/Blog%20Modal%20System-100%25-a55eea?style=for-the-badge" /> </p>
 <p align="center"> <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%" /> </p>
 
+----
+## 📚 Project Articles & Resources
+
+Learn how this portfolio was built step-by-step through detailed articles:
+
+- 📝 Dev.to: https://dev.to/yasirawan4831/full-stack-portfolio-website-complete-step-by-step-breakdown-4ccg  
+- 📝 Hashnode: https://developerhub-coraporation-internship.hashnode.dev/full-stack-portfolio-website-complete-step-by-step-breakdown  
+- 📝 Substack: https://open.substack.com/pub/yasirwaninfo/p/full-stack-portfolio-website-complete  
+- 📝 Medium: https://medium.com/@YasirAwan4831/full-stack-portfolio-website-complete-step-by-step-breakdown-07df43fe8f2e  
+
+---
+
+## 🎥 Video Walkthrough
+
+Watch the complete project explanation on YouTube:
+
+https://youtu.be/XcyAGuaVp_E?si=C4-lFnUrNDRoJjeT![alt text](image.png))](https://youtu.be/BhO4PwLpRP4?si=w8t53QDoVybIJ4lD)
+
+---
+
+<p align="center">
+  <a href="https://youtu.be/DXXKiIGeqAE">
+    <img src="https://img.shields.io/badge/YouTube-Project%20Demo-FF0000?style=for-the-badge&logo=youtube"/>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://dev.to/yasirawan4831/full-stack-portfolio-website-complete-step-by-step-breakdown-4ccg">
+    <img src="https://img.shields.io/badge/Dev.to-Article-black?style=for-the-badge&logo=dev.to"/>
+  </a>
+  <a href="https://medium.com/@YasirAwan4831/full-stack-portfolio-website-complete-step-by-step-breakdown-07df43fe8f2e">
+    <img src="https://img.shields.io/badge/Medium-Article-12100E?style=for-the-badge&logo=medium"/>
+  </a>
+  <a href="https://developerhub-coraporation-internship.hashnode.dev/full-stack-portfolio-website-complete-step-by-step-breakdown">
+    <img src="https://img.shields.io/badge/Hashnode-Article-2962FF?style=for-the-badge&logo=hashnode"/>
+  </a>
+</p>
+
+---
+
 
 ## ✨ KEY FEATURES
 
@@ -370,6 +410,8 @@ The blog section features **6 full-length articles** with rich formatting and mo
 | Building a Modern Portfolio with React & TypeScript | Web Dev | 5 min |
 | How I Landed 3 Internships in One Year | Career | 4 min |
 | Top 10 UI/UX Principles Every Developer Must Know | Design | 4 min |
+| Typing Master Web App (React + Vite) | Web Development
+ | 4 min |
 | JavaScript vs TypeScript: Which First? | Web Dev | 5 min |
 | WordPress vs Custom Code: When to Use Each | Web Dev | 4 min |
 | Git & GitHub for Beginners | Tools | 5 min |
